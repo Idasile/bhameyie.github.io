@@ -33,7 +33,7 @@
         
         <nav id="menu">
           <ul id="menu-nav">
-              <li><a href="index.html#home-slider" class="current">Home</a></li>
+              <li><a href="/index.html" class="external">Home</a></li>
                {% for page in site.pages %}
           {% if page.title %}
           <li><a class="external" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -45,3 +45,14 @@
     </div>
 </header>
 <!-- End Header -->
+
+<div class="big-quote page">
+  <div class="container">
+      <div class="row">
+          <div class="span12">
+              <p>{{ site.description }}</p>
+                <span class="font-icon-blockquote"></span>
+            </div>
+        </div>
+    </div>
+</div>

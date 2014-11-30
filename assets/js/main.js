@@ -77,10 +77,10 @@ CHAKRA.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'assets/img/slider-images/image01.jpg', title : '<div class="slide-content">Chakra</div>', thumb : '', url : ''},
-											{image : 'assets/img/slider-images/image02.jpg', title : '<div class="slide-content">Responsive Design</div>', thumb : '', url : ''},
-											{image : 'assets/img/slider-images/image03.jpg', title : '<div class="slide-content">FullScreen Gallery</div>', thumb : '', url : ''},
-											{image : 'assets/img/slider-images/image04.jpg', title : '<div class="slide-content">Showcase Your Work</div>', thumb : '', url : ''}  
+											{image : '/assets/img/slider-images/image01.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+											{image : '/assets/img/slider-images/image02.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+											{image : '/assets/img/slider-images/image03.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+											{image : '/assets/img/slider-images/image04.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   
@@ -207,7 +207,7 @@ CHAKRA.contactForm = function(){
 		
 		$.ajax({
 			type: "POST",
-			url: "assets/php/contact.php",
+			url: "/assets/php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -234,7 +234,7 @@ CHAKRA.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: 'assets/js/twitter/',
+          modpath: '/assets/js/twitter/',
           username: "bhameyie", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -453,7 +453,7 @@ CHAKRA.map = function(){
 			
 			var map = new google.maps.Map(document.getElementById($map_id), options);
 		
-			var image = 'assets/img/marker.png';
+			var image = '/assets/img/marker.png';
 			var marker = new google.maps.Marker({
 				position: latlng,
 				map: map,
@@ -489,7 +489,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: 'assets/js/placeholder.js', 
+		nope: '/assets/js/placeholder.js', 
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
