@@ -10,5 +10,7 @@ url: "http://blog.47ron.in" # the base hostname & protocol for your site
 twitter_username: bhameyie
 github_username: bhameyie
 
+paginate: 5
+
 # Build settings
 markdown: kramdown
