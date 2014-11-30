@@ -1,15 +1,65 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<div id="blog" class="page-alternate">
+	<div class="container">
+    	<div class="row">
+        	<div class="span12">
+            
+             	<!-- Start Article -->
+            	<article class="post">
+                	{% if post.thumbnail %}
+                <div class="post-thumb">
+                      <a href="#">
+                          <img src="{{ post.thumbnail }}"/>
+                        </a>
+                    </div>
+  {% endif %}
+                	<h2 class="entry-title">
+                    	<a href="#">{{ page.title }}</a>
+                    </h2>
+                    <div class="entry-meta">
+                        <span class="author">{% if page.author %} • {{ page.author }}{% endif %}</span>
+                        <span class="divider">/</span>
+                        <span class="published">{{ page.date | date: "%b %-d, %Y" }}</span>
+                        <span class="divider">/</span>
+                        <span class="comment-count">
+                        {% if page.meta %} • {{ page.meta }}{% endif %}
+                        </span>
+                    </div>
+                    
+                    <div class="entry-content">
+                    	 {{ content }}
+                    </div>     
+                    
+                    <div class="entry-meta entry-footer">
+                    	{% if page.meta %} • {{ page.meta }}{% endif %}
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+                    	<span class="entry-categories">
+                    		Posted in:
+                    		{% for cat in page.categories %}
+                    		<a href="#">{{ cat }}</a>
+                    		{% endfor %}
+                    	</span>
 
+
+                        <span class="entry-tags">
+                            <span class="divider">/</span>
+                            Tagged:
+                            {% for cat in page.tags %}
+                    		Posted in:
+                    		<a href="#">{{ cat }}</a>
+                    		{% endfor %}
+                        </span>
+
+                    </div>
+             
+                </article>
+                <!-- End Article -->
+                
+                 </div>
+        </div>
+    </div>
 </div>
+<!-- End Blog Section -->
