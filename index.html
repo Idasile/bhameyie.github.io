@@ -2,22 +2,43 @@
 layout: default
 ---
 
-<div class="home">
+<!-- Blog Section -->
+<div id="blog" class="page-alternate">
+  <div class="container">
+      <div class="row">
+          <div class="span12">
+                {% for post in site.posts %}
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+              <article class="post">
+              <p>{% if post.thumbnail %}
+                <div class="post-thumb">
+                      <a href="blog-details.html">
+                          <img src="{{ post.thumbnail }}"/>
+                        </a>
+                    </div>
+  {% endif %}
+                  <h2 class="entry-title">
+                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    <div class="entry-meta">
+                        <span class="author">By Boguste</span>
+                        <span class="divider">/</span>
+                        <span class="published">{{ post.date | date: "%b %-d, %Y" }}</span>
+                        <span class="divider">/</span>
+                       
+                    </div>
+                    
+                    <div class="entry-content">
+                      {{ post.excerpt }}
+                        <p>
+                          <a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Continue Reading...</a>
+                        </p> 
+                    </div>                  
+                </article>
+               {% endfor %}   
+            </div>
+        </div>
+    </div>
 </div>
+<!-- End Blog Section -->
+
