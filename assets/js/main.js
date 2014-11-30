@@ -77,10 +77,10 @@ CHAKRA.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '/assets/img/slider-images/image01.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-											{image : '/assets/img/slider-images/image02.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-											{image : '/assets/img/slider-images/image03.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-											{image : '/assets/img/slider-images/image04.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''}  
+											{image : '/assets/img/slider-images/image1.png', title : '<div class="slide-content">47 Ronin</div>', thumb : '', url : ''},
+											{image : '/assets/img/slider-images/image2.png', title : '<div class="slide-content">47 ろうにん</div>', thumb : '', url : ''},
+											{image : '/assets/img/slider-images/image3.png', title : '<div class="slide-content">47 rōnin</div>', thumb : '', url : ''},
+											{image : '/assets/img/slider-images/image4.png', title : '<div class="slide-content">47 浪人</div>', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   
