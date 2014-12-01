@@ -10,7 +10,7 @@ layout: default
       <div class="row">
           <div class="span12">
            
-                {% for post in site.posts %}
+                {% for post in paginator.posts %}
 
               <article class="post">
               <p>{% if post.thumbnail %}
@@ -24,7 +24,7 @@ layout: default
                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                     </h2>
                     <div class="entry-meta">
-                        <span class="author">By {% if page.author %} • {{ page.author }}{% endif %}</span>
+                        <span class="author">By {% if post.author %} • {{ post.author }}{% endif %}</span>
                         <span class="divider">/</span>
                         <span class="published">{{ post.date | date: "%b %-d, %Y" }}</span>
                         <span class="divider">/</span>
@@ -38,7 +38,23 @@ layout: default
                         </p> 
                     </div>                  
                 </article>
-               {% endfor %}  
+               {% endfor %} 
+               <!-- Pagination links -->
+               <div class="navigation page-navigation">
+{% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
+  {% else %}
+    <span class="prev">Previous</span>
+  {% endif %}                   
+                      <span class="number current ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+                    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+                </div>
+
             </div>
         </div>
     </div>

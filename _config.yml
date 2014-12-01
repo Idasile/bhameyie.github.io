@@ -2,15 +2,18 @@
 title: Your awesome title
 email: bhameyie@47ron.in
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.47ron.in" # the base hostname & protocol for your site
+  A blog about Distributed Systems, the Cloud, Mobile Developement and that Developer life.
+baseurl: ""
+url: "http://www.47ron.in" # the base hostname & protocol for your site
 twitter_username: bhameyie
 github_username: bhameyie
 
 paginate: 5
 
+destination: ./_site
+
 # Build settings
 markdown: kramdown
+
+permalink:     /blog/:year/:month/:day/:title.html
+paginate_path: /page:num
