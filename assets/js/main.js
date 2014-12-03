@@ -467,7 +467,7 @@ CHAKRA.map = function(){
 			var contentString = '<p><strong>Philly</strong></p>';
        
 			var infowindow = new google.maps.InfoWindow({
-				content: contentString
+				content: $map_title
 			});
 			
 			google.maps.event.addListener(marker, 'click', function() {
