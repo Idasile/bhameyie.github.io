@@ -82,20 +82,12 @@ permalink: /about/
             </div>
                 
                 <div class="page-description">
-                    <p>My name is Boguste, currently a Software Engineer at IBM. More details to come.</p>
+                    <p>My name is Boguste, currently a Software Engineer at IBM.</p>
 
                    
                 </div>
 
-<div>
-                                <h3>Currently lives here</h3>
-                 <div id="map-area">
-    <div class="map" id="map_1" data-mapLat="39.952638" data-mapLon="-75.167341" data-mapZoom="11" data-mapTitle="Philly"></div>
-</div>
-</div>
-
-           
-            </div>
+ </div>
         </div>
     </div>
           </div>
