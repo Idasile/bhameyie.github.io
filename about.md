@@ -62,9 +62,6 @@ permalink: /about/
         <div class="span4">
             <h3>Tech</h3>
  <p> This blog is powered by <a href="http://jekyllrb.com"> Jekyll</a> and  <a href="http://themes.alessioatzeni.com/html/chakra/" title="Chakra | Responsive One Page Template">Chakra Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a> </p>
-
-
-
         </div>
     </div>
     <div class="row">
