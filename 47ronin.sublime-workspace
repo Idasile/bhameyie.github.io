@@ -11,6 +11,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/bhameyie/sekele/jgc/muinda/circle.yml",
+			"settings":
+			{
+				"buffer_size": 2714,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -48,10 +56,12 @@
 	},
 	"file_history":
 	[
-		"/Users/bhameyie/sekele/47ronin/about.md",
-		"/Users/bhameyie/sekele/47ronin/_posts/2014-11-30-welcome-to-jekyll.markdown",
-		"/Users/bhameyie/sekele/47ronin/_layouts/post.html",
+		"/Users/bhameyie/sekele/47ronin/_drafts/2014-12-07-uploading-pictures-to-cloudinary-using-swift.md",
 		"/Users/bhameyie/sekele/47ronin/Rakefile.rb",
+		"/Users/bhameyie/Desktop/TPL-Chakra/Chakra/Template/chakra/light/shortcodes.html",
+		"/Users/bhameyie/sekele/47ronin/about.md",
+		"/Users/bhameyie/sekele/47ronin/_layouts/post.html",
+		"/Users/bhameyie/sekele/47ronin/_posts/2014-11-30-welcome-to-jekyll.markdown",
 		"/Users/bhameyie/sekele/47ronin/index.html",
 		"/Users/bhameyie/Desktop/TPL-Chakra/Chakra/Template/chakra/light/index.html",
 		"/Users/bhameyie/sekele/47ronin/assets/js/main.js",
@@ -90,6 +100,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fade",
 			"new_post_ext",
 			"source_dir",
 			"thum",
@@ -138,8 +149,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/bhameyie/sekele/jgc/muinda/circle.yml",
+					"settings":
+					{
+						"buffer_size": 2714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 325.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -199,6 +239,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 215.0,
 	"status_bar_visible": true
 }
