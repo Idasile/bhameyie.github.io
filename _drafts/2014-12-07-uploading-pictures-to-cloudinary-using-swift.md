@@ -2,7 +2,7 @@
 author: Boguste
 layout: post
 title: "Uploading pictures using Cloudinary and Swift"
-date: 2014-27-07 08:48:58 -0500
+date: 2014-12-07 08:48:58 -0500
 tags: swift ios cloudinary image-management
 categories: mobile cloud
 thumbnail: http://www.toptal.com/uploads/blog/category/logo/293/Apple_Swift_Logo.png

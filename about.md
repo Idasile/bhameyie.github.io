@@ -6,7 +6,26 @@ permalink: /about/
 
 <div id="about" class="page-alternate">
 <div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Invictus Maneo</span>
+                </div>
+                <img src="/assets/img/bham.png" alt="Me">
+            </div>
+                
+                <div class="page-description">
+                    <p>My name is Boguste, currently a Software Engineer at IBM.</p>
 
+                   
+                </div>
+
+ </div>
+        </div>
+    </div>
         <div class="row margin-40">
                             <h2 class="title">This blog's</h2>
 
@@ -18,8 +37,6 @@ permalink: /about/
 
     The title "47 ronin" is in reference to the <a href="http://en.wikipedia.org/wiki/Forty-seven_Ronin"> japanese tale of the same</a>. As the story relates to 47 ronin (i.e. leaderless samurai) who coordinated their effort to achieve a common goal, I thought it appropriate to use as the title of a blog about distributed systems (decoupled and sometime leaderless 'entities'/actors/services which work together to achieve their intended purpose).
    </p>
-            <p>All opinions mentioned are my own and do not reflect those of my current employer</p>
-
         </div>
         
 <div class="span4">
@@ -56,7 +73,8 @@ permalink: /about/
                     <div class="bar" style="width: 100%;"></div>
                 </div>
             </div> 
-
+            <p>Some of the content are based on prior or current experiences. Some reflect my current thinking on a topic. As with everything found on the internet, they are to be taken with a grain a salt.</p>
+            <p>All opinions mentioned are my own and do not reflect those of my current employer.</p>
         </div>
 
         <div class="span4">
@@ -64,28 +82,6 @@ permalink: /about/
  <p> This blog is powered by <a href="http://jekyllrb.com"> Jekyll</a> and  <a href="http://themes.alessioatzeni.com/html/chakra/" title="Chakra | Responsive One Page Template">Chakra Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a> </p>
         </div>
     </div>
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Me</h2>
-                <h3 class="title-description">Invictus Maneo</h3>
 
-                <div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Boguste</span>
-                </div>
-                <img src="/assets/img/bham.png" alt="Me">
-            </div>
-                
-                <div class="page-description">
-                    <p>My name is Boguste, currently a Software Engineer at IBM.</p>
-
-                   
-                </div>
-
- </div>
-        </div>
-    </div>
           </div>
             </div>
