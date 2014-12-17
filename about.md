@@ -17,11 +17,11 @@ permalink: /about/
                 <img src="/assets/img/bham.png" alt="Me">
             </div>
                 
-                <div class="page-description">
-                    <p>My name is Boguste, currently a Software Engineer at IBM.</p>
+     <div class="page-description">
+         <p>My name is Boguste, a Software Engineer currently working in the Finance industry.</p>
 
-                   
-                </div>
+        
+     </div>
 
  </div>
         </div>
