@@ -2,13 +2,17 @@
 author: Boguste
 layout: post
 title: "Uploading pictures using Cloudinary and Swift"
-date: 2014-12-07 08:48:58 -0500
+date: 2015-1-08 08:48:58 -0500
 tags: swift ios cloudinary image-management
 categories: mobile cloud
 thumbnail: http://www.toptal.com/uploads/blog/category/logo/293/Apple_Swift_Logo.png
 ---
 
 Let say we wanted to upload images captured through our iOS app to the cloud, and we have chosen Cloudinary as the means to this. Let say we have chosen to build application using [Swift](https://developer.apple.com/swift/), the new programming language released by Apple for building iOS applications.
+
+You would think that we could just grab the Cloudinary SDK and get crackin right? right? right ?! Wrong!!
+
+<img src="/assets/img/memes/objective-from-swift.jpg" align="middle" alt="Objectice-C and Swift"/>
 
 <div class="accordion-group">
   <div class="accordion-heading accordionize">
@@ -26,25 +30,21 @@ Let say we wanted to upload images captured through our iOS app to the cloud, an
   </div>
 </div>
 
-You would think that we could just grab the Cloudinary SDK and get crackin right? right? right ?! Wrong!!
-
-<img src="/assets/img/memes/objective-from-swift.jpg" align="middle" alt="Objectice-C and Swift"/>
 
 As Swift is yet to get good tooling for dependency management (Cocoapods tend not to work), there's a few manual steps you have to perform. Let's get coding!
 
 ## <a name="solution"> Solution </a>
 
-The code for this solution can be found on <a href="https://github.com/47ron-in/cloudinary-swift-template"><img src="https://octodex.github.com/images/octobiwan.jpg" alt="Github" width="42" height="42"/></a>
-
 Let's pretend you have a RESTful service that returns you a list of items, whose properties include the URL of its associated image. 
 
-First, let's add the ability to pick or capture the image to be uploaded.
+Let's also pretend you already have the means to pick the desire image to be uploaded, either via a controller with an AlertController, or an intermediary page on which the user selects the image to be uploaded.
 
-FILL IN HERE how to write the code and link it using Xcode
+E.g. Using a controller with 2 button
+<script src="https://gist.github.com/bhameyie/b96c3a24e6b3c149d833.js"></script>
 
-Now, please follow the steps indicated in the cloudinar [setup instructions](https://github.com/cloudinary/cloudinary_ios#setup)
+Upon completing the steps indicated in the cloudinary [setup instructions](https://github.com/cloudinary/cloudinary_ios#setup), we can now add a Bridge header file and related wrapper classes written in oh so lovely Objective-C.
 
-With that now, let's now add this Bridge header file. 
+<script src="https://gist.github.com/bhameyie/5e8cde38256ef3411834.js"></script> 
 
 <div class="accordion-group">
                         <div class="accordion-heading accordionize">
@@ -55,14 +55,21 @@ With that now, let's now add this Bridge header file.
         </div>
         <div id="twoArea" class="accordion-body collapse">
             <div class="accordion-inner">
-               FILL IN
+               The bridge header file allows to bridge Objective-C to your Swift code, i.e. it enables you to leverage code written in Objective-C from Swift. <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html"> Here's more info.</a>
             </div>
         </div>
 </div>
 
-Let's tie it up in Xcode. FILL IN STEPS and a single picture
+Let's tie it up in Xcode.
 
-And finally, the last pieces to make it all work. FILL IN CODE to upload to cloudinary and wait for success.
+<img src="/assets/img/posts/BridgingExample_cloudinary.png" align="middle" alt="Objectice-C and Swift"/>
+   
+
+And finally, the last pieces to make it all work: the actual uploading.
+
+<script src="https://gist.github.com/bhameyie/55eb51b58e05d4096c95.js"></script>
+
+Voila!
 
 <div class="alert fade in">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
@@ -72,7 +79,6 @@ And finally, the last pieces to make it all work. FILL IN CODE to upload to clou
 Please keep in mind that I am not using the most secure way of uploading the file using cloudinary since i am keeping the <strong>api_secret</strong> on the mobile device. It can be easily changed following the steps highlighted <a href="https://github.com/cloudinary/cloudinary_ios#safe-mobile-uploading">here</a>
                 </div>
 
-That should do it!
 
 Happy coding!
 

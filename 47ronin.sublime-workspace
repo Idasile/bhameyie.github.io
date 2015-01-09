@@ -12,10 +12,58 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/bhameyie/sekele/jgc/muinda/circle.yml",
+			"file": "_drafts/2014-12-17-image-management-on-the-cloud.md",
 			"settings":
 			{
-				"buffer_size": 2714,
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "about.md",
+			"settings":
+			{
+				"buffer_size": 3741,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_drafts/2014-12-07-registering-users-with-ibm-id.md",
+			"settings":
+			{
+				"buffer_size": 213,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_drafts/2014-12-07-uploading-pictures-to-cloudinary-using-swift.md",
+			"settings":
+			{
+				"buffer_size": 3475,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/page.html",
+			"settings":
+			{
+				"buffer_size": 246,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-12-17-image-management-on-the-cloud.md",
+			"settings":
+			{
+				"buffer_size": 6780,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 3760,
 				"line_ending": "Unix"
 			}
 		}
@@ -56,16 +104,20 @@
 	},
 	"file_history":
 	[
+		"/Users/bhameyie/sekele/47ronin/_drafts/2014-20-07-registering-users-with-ibm-id.md",
 		"/Users/bhameyie/sekele/47ronin/_drafts/2014-12-07-uploading-pictures-to-cloudinary-using-swift.md",
+		"/Users/bhameyie/sekele/47ronin/_config.yml",
 		"/Users/bhameyie/sekele/47ronin/Rakefile.rb",
+		"/Users/bhameyie/sekele/47ronin/_drafts/2014-12-07-image-management-on-the-cloud.md",
+		"/Users/bhameyie/sekele/47ronin/_layouts/post.html",
+		"/Users/bhameyie/sekele/47ronin/assets/css/main.css",
+		"/Users/bhameyie/sekele/jgc/muinda/circle.yml",
 		"/Users/bhameyie/Desktop/TPL-Chakra/Chakra/Template/chakra/light/shortcodes.html",
 		"/Users/bhameyie/sekele/47ronin/about.md",
-		"/Users/bhameyie/sekele/47ronin/_layouts/post.html",
 		"/Users/bhameyie/sekele/47ronin/_posts/2014-11-30-welcome-to-jekyll.markdown",
 		"/Users/bhameyie/sekele/47ronin/index.html",
 		"/Users/bhameyie/Desktop/TPL-Chakra/Chakra/Template/chakra/light/index.html",
 		"/Users/bhameyie/sekele/47ronin/assets/js/main.js",
-		"/Users/bhameyie/sekele/47ronin/_config.yml",
 		"/Users/bhameyie/sekele/47ronin/_includes/header.html",
 		"/Users/bhameyie/sekele/47ronin/_includes/head.html",
 		"/Users/bhameyie/Desktop/TPL-Chakra/Chakra/Template/chakra/light/blog.html",
@@ -77,7 +129,6 @@
 		"/Users/bhameyie/sekele/47ronin/_layouts/default.html",
 		"/Users/bhameyie/Desktop/TPL-Chakra/Chakra/Template/chakra/light/blog-details.html",
 		"/Users/bhameyie/sekele/47ronin/_layouts/page.html",
-		"/Users/bhameyie/sekele/47ronin/assets/css/main.css",
 		"/Users/bhameyie/sekele/47ronin/assets/css/shortcodes.css",
 		"/Users/bhameyie/sekele/47ronin/assets/css/custom.css",
 		"/Users/bhameyie/Desktop/TPL-Chakra/Chakra/Source Files/ICONS + FONT/Reference Font Icons/style.css",
@@ -149,15 +200,15 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/bhameyie/sekele/jgc/muinda/circle.yml",
+					"file": "_drafts/2014-12-17-image-management-on-the-cloud.md",
 					"settings":
 					{
-						"buffer_size": 2714,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -170,12 +221,186 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1060.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "about.md",
+					"settings":
+					{
+						"buffer_size": 3741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								536,
+								536
+							],
+							[
+								572,
+								572
+							],
+							[
+								672,
+								672
+							],
+							[
+								681,
+								681
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 850.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_drafts/2014-12-07-registering-users-with-ibm-id.md",
+					"settings":
+					{
+						"buffer_size": 213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_drafts/2014-12-07-uploading-pictures-to-cloudinary-using-swift.md",
+					"settings":
+					{
+						"buffer_size": 3475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								94
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 325.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_layouts/page.html",
+					"settings":
+					{
+						"buffer_size": 246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_posts/2014-12-17-image-management-on-the-cloud.md",
+					"settings":
+					{
+						"buffer_size": 6780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4602,
+								4602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1090.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_layouts/post.html",
+					"settings":
+					{
+						"buffer_size": 3760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 790.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -189,7 +414,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -239,6 +464,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 215.0,
+	"side_bar_width": 405.0,
 	"status_bar_visible": true
 }

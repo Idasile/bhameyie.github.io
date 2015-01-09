@@ -984,7 +984,9 @@ nav#menu #menu-nav li a:hover {
 }
 
 .post-thumb img {
-	width: 60%;	
+	width: 40%;	
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .entry-title,
