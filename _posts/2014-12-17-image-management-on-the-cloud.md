@@ -46,12 +46,15 @@ Amongst those services, the 2 most celebrated ones are [AWS S3](http://aws.amazo
 
 ## AWS S3
 
-AWS S3 has been discussed to death, so I wont go into much details about how it works and why its great.Just to summarize:
-* it centered around the concept of buckets, which are virtual containers for your files and folders
-* access policies can be defined to control who can act upon resources stored in a bucket 
-* buckets can be created in different regions in order to reduce latency and increase availability
-* version/history of the file in the bucket can be tracked
+AWS S3 has been discussed to death, so I wont go into much details about how it works and why its great.
 
+Just to summarize:
+<ul>
+<li> it centered around the concept of buckets, which are virtual containers for your files and folders </li>
+<li> access policies can be defined to control who can act upon resources stored in a bucket </li>
+<li> buckets can be created in different regions in order to reduce latency and increase availability</li>
+<li> version/history of the file in the bucket can be tracked</li>
+</ul>
 Programmatic access to AWS s3 is achievable using their SDKs which I have found to be pretty easy to use.
 
 You could combine the use of AWS S3 with [AWS CloudFront](http://aws.amazon.com/cloudfront/), Amazon's CDN. You could actually use the latter with your file storage servers from option 1.
