@@ -917,6 +917,23 @@ nav#menu #menu-nav li a:hover {
 	color: #FF8C53;	
 }
 
+
+.small-quote {
+	text-align: center;	
+}
+
+.small-quote p {
+	font-size: 25px;
+	color: #E26A1A;
+	line-height: 48px;	
+	background: #ECD8CB;
+}
+
+.small-quote span {
+	font-size: 25px;
+	color: #FF8C53;	
+}
+
 /* ==================================================
    Service Section
 ================================================== */
