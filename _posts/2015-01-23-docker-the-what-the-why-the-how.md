@@ -4,7 +4,7 @@ layout: post
 title: "Docker: the what, the why, the how"
 date: 2015-01-23 15:47:25 -0500
 tags: docker deployment testing environment 
-categories: cloud
+categories: cloud distributed-systems
 thumbnail: https://c2.staticflickr.com/8/7336/14098888813_1047e39f08.jpg
 ---
 
@@ -84,7 +84,7 @@ Then on the server, you would just need to run it with the needed environment va
         </div>
         <div id="twoArea" class="accordion-body collapse">
             <div class="accordion-inner">
-               Please refer to the [previous post](http://47ron.in/blog/2015/01/16/terraform-dot-io-all-hail-infrastructure-as-code.html) in which I discuss Terraform.io and give a snippet of how I do my deployment using both Terraform and Docker.
+               Please refer to <a href="http://47ron.in/blog/2015/01/16/terraform-dot-io-all-hail-infrastructure-as-code.html">this previous post</a> in which I discuss Terraform.io and give a snippet of how I do my deployment using both Terraform and Docker.
             </div>
         </div>
 </div>

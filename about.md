@@ -75,6 +75,7 @@ permalink: /about/
             </div> 
             <p>Some of the content are based on prior or current experiences. Some reflect my current thinking on a topic. As with everything found on the internet, they are to be taken with a grain a salt.</p>
             <p>All opinions mentioned are my own and do not reflect those of my current employer.</p>
+            <p>Any <a href="https://docs.google.com/forms/d/1yyiiKkuDHtsHdIMDjaIBQQ8SVy-19YzSdvCzLa7jqxM/viewform"> feedback</a> would be much appreciated.</p>
         </div>
 
         <div class="span4">
