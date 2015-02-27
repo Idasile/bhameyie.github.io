@@ -32,6 +32,6 @@ In short: less whales, more smiles.
 
 <a href="https://imgflip.com/i/gwn2o"><img src="https://i.imgflip.com/gwn2o.jpg" title="made at imgflip.com"/></a>
 
-Hopefully this is enough to at least get you interested to find out more. In the coming weeks I shall demonstrate how to build such systems. If you're curious, more information can also be obtained from Roland Kuhn's upcoming book on [reactive design](http://manning.com/kuhn/) and Vaugh Vernon's [Reactive Enterprise](https://www.safaribooksonline.com/library/view/reactive-enterprise-with/9780133846904/) book.
+Hopefully this is enough to at least get you interested to find out more. If you're curious, more information can also be obtained from Roland Kuhn's upcoming book on [reactive design](http://manning.com/kuhn/) and Vaugh Vernon's [Reactive Enterprise](https://www.safaribooksonline.com/library/view/reactive-enterprise-with/9780133846904/) book.
 
 While reactive design is not a silver bullet, it certainly is a significant step the right direction.
