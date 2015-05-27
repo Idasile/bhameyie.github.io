@@ -1,9 +1,9 @@
 ---
 author: Boguste
 layout: post
-title: "Do No Harm: Semantic Versioning"
+title: "Do No Harm: Short tale on Versioning"
 date: 2015-05-99 9:20:43 -0400
-tags: best-practices general semantic-versioning versioning
+tags: best-practices general semantic-versioning versioning package-management
 categories: donoharm
 thumbnail: http://pixabay.com/static/uploads/photo/2015/03/10/12/28/coffee-667052_640.jpg
 ---
@@ -22,6 +22,16 @@ You quadruple check the version to make sure that all your working environment h
 
 Out of the desperation, you use virtualbox to create a VM on which to run your tests. They fail for the same reasons they did on the CI. The world stops making sense. After a bunch of failed attempt at fixing the problem, you decide to clear any potential caches you may have on your local environment. Lo and behold, the bug is reproduced. As it turns out, somebody updated the library you've been using (introducing a bug in the process) and published it to their hosted maven repository, but they did not increase the version.
 
-It's 1 AM Monday morning, you've missed the release. This would not have happened had the maintainer of those public libraries had followed [Semantic Versioning](http://semver.org/) and proper package distribution practices.
+It's 1 AM Monday morning, you've missed the release. This would not have happened had the maintainers of those public libraries had followed [Semantic Versioning](http://semver.org/) and proper package management and distribution practices.
+
+Semantic Versioning
+================
+
+With Semantic Versioning, the version numbers helps consumers understand the type of impacting they can expect from upgrading to the new version. For example, if only the PATCH version increases, you know it's a bug fix with no breaking changes. It is thus OK to upgrade knowing your code would still compile. A MINOR version change would indicate that new functionality/improvements have been made in a backward-compatible way, i.e. it is still safe to upgrade although it could be advantageous to start using the functionality if the old way has been marked as obsolete/deprecated. A MAJOR version change on the other hand makes no promise on backward compatibility. Any consumer of your API would know that they have to do more work to adopt your new version, and it's OK. Without such versioning guarentees however, version upgrades can be fairly risky.
+
+Package Management
+==================
+
+There are plenty of package management utility out there (Maven, Ivy, NuGet, RubyGem) to name a few. Those utilities tend to encourage package maintainers to use Semantic Versioning. Unfortunately, they do allow you to delete versions and re-upload them (essentially replacing existing versions). While I can see scenarios in which that is a good thing (e.g. delete a package that was uploaded by mistake), there are plenty of case where that can be problematic.
 
 This is the first of a series of post I hope to start publishing every now and then. Any comments and thoughts would be welcome.
