@@ -5,7 +5,7 @@ title: "Do No Harm: Short tale on Versioning"
 date: 2015-06-03 9:20:43 -0400
 tags: best-practices general semantic-versioning versioning package-management
 categories: donoharm
-thumbnail: http://pixabay.com/static/uploads/photo/2015/03/10/12/28/coffee-667052_640.jpg
+thumbnail: http://upload.wikimedia.org/wikipedia/commons/2/23/HokusaiChushingura.jpg
 ---
 
 Here's a little story inspired by true events. It's 7.30 PM on a Sunday. After weeks upon weeks of hard work, you are now one commit away from releasing the new uber-awesome-oh-so-incredible (TM) application that will revolutionize the entire world. You can already see the millions of happy faces with each keystroke as you are about to push your latest changes. But you decide to do your due diligence. A new bug fix for the library you've been using to connect to your main datastore has been released. After reading the release notes, you realize they've fixed a pretty significant bug you were unaware of, so you decide to update. After all, it's just a bug fix. Nothing should break, right? right? Wrong!
