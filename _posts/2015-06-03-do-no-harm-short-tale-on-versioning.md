@@ -38,4 +38,6 @@ There are plenty of package management utility out there (Maven, Ivy, NuGet, Rub
 
 *Do no harm: use semantic versioning and adopt good package management practices.*
 
+<img src="http://cdn.meme.am/instances/500x/45826.jpg" align="middle" alt="Take away"/>
+
 This is the first of a series of post I hope to start publishing every now and then. Any comments/thoughts are welcome.
