@@ -71,6 +71,8 @@ And finally, the last pieces to make it all work: the actual uploading.
 
 Voila!
 
+*UPDATE 6/22/15: Removed adapter code*
+
 <div class="alert fade in">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
                     <strong>Warning!</strong><p/> 
