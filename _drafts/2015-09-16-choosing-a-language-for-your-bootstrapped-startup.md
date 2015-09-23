@@ -33,9 +33,19 @@ Here are some criterias to consider, listed in an unashamedely subjective order 
 
 How fast is the compilation of projects?
 
-# Evolution and Maintenance
-
 # Deployment
+
+Here's a crazier scenario:
+- Smith et al. release a new social media platform for the enterprise after a year of beta that has seen some of the big boys buy in. Six months after the well publicized release, some black hat hacker has managed to find a problem in the system could give him access to all the accounts and payment information of the users. The cocky hacker demands you pay him up in the next 30 minutes or else!! Thankfully, your logging and monitoring tools have helped the Dev see a critical problem in the code that is VERYYYYYY easy to fix (as in 2 lines of code). Unfortunately, it takes a long time to compile the code as the compiler does not do incremental compilation. Worse, it takes a full 3 minutes for your app to load up (i'm looking at you otherwise perfect Clojure*). You have 10 servers running on multiple locations that would need to be updated. Even if we assume that you are using tools like docker and marathon to help with deploying things faster, the Math says: you won't make it. Logic says: let's just shutdown the system since this is a very critical problem (probably the right course of action). Legal says: the agreements signed by the big companies stated a guarentee of 99% uptime, a.k.a you would breach the contract, which would cost even more. Solution: hacker gets a fat check because you could not deploy fast.
+
+Sure, this is an unlikely scenario. But you get my point. Assuming you follow good development practices and whatnot, you should want yout tech stack to not hinder your ability to release quickly. You need to be able to fix bugs and release new features quickly.
+
+
+* Clojure has the ability to hotswap live running code.
+This is obviously very important. You preferably want to use a tech stack that makes it easy as this could sink your business quickly.
+
+
+# Evolution and Maintenance
 
 # Community support
 
