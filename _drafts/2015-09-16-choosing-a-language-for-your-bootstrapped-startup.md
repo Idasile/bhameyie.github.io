@@ -17,18 +17,31 @@ We often hear the expression "use the best tool for the job". To me Programming 
 
 Sure with the advent of Docker and Microservices, you could theoretically use an assortment of programming languages. What you'll find however is that someone will have to support the software built on those different languages that used different stacks that produced different errors under similar circumstances. That's the reason why a lot of the big boys tend to have platform/infrastructure teams who consolidate the tech stack that is used. (EXPAND)
 
-Here are some important criteria to consider:
+Here are some criterias to consider, listed in an unashamedely subjective order of importance:
 
+- What frameworks and tools (the tech stack) would be available to me that would help me build my stuff quicker?
+- How quickly and easily will it be to evolve and maintain my system over time?
+- How hard or easy would it be to ship artifcats (libraries/executables) on that stack?
 - How quickly can I gain proficiency on the language?
 - How active is the community supporting that language?
-- What frameworks would be available to me that would help me build my stuff?
 - How many other folks know that language/tech stack?
 - How quickly can other folks get up to speed on that language/tech stack?
   - How much level of expertise (Junior/Mid/Senior level Engineer) would be required to gain proficiency on it?
-- How hard or easy would it be to develop on that stack?
-- How hard or easy would it be to ship artifcats (libraries/executables) on that stack?
-- How hard or difficult would deployment be?
 - How familiar am I with the language?
+
+# The tech stack to Get Things Done (GTD)
+
+How fast is the compilation of projects?
+
+# Evolution and Maintenance
+
+# Deployment
+
+# Community support
+
+# Pool of developers
+
+# Ramp up time for new team members
 
 # How familiar am I with the language?
 
