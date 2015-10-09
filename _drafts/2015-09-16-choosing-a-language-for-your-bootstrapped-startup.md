@@ -15,7 +15,7 @@ Often time I hear/read folks claiming that it doesn't matter. Just pick one and 
 
 We often hear the expression "use the best tool for the job". To me Programming languages are more like weapons you can use to slash problems. Choosing the right Programming language (and related tech stack) is one very important decision that might have an impact on the future of your product and, by extension, your company. The programming language (and related stack) will determine how quickly you can get to market, how quickly you can deliver updates and fixes, how easily you can field your engineering staff with Devs that can become productive quickly, as well as how quickly you can adopt new programming/architectural paradigms.
 
-Sure with the advent of Docker and Microservices, you could theoretically use an assortment of programming languages. What you'll find however is that someone will have to support the software built on those different languages that used different stacks that produced different errors under similar circumstances. That's the reason why a lot of the big boys tend to have platform/infrastructure teams who consolidate the tech stack that is used.
+Sure with the advent of Docker and Microservices, you could theoretically use an assortment of programming languages. What you'll find however is that someone will have to support the software built on those different languages that used different stacks that produced different errors under similar circumstances. That's the reason why a lot of the big boys tend to have platform/infrastructure teams who consolidate the tech stacks that are used to a few that can be maintained.
 
 # The Tech Stack to Get Things Done (GTD)
 
@@ -61,7 +61,8 @@ If however you are familiar with a language that provides you a lot of benefits 
 - Community: How active and mature is the community supporting that language? How many other folks know that language/tech stack?
 - Hiring: How much level of expertise (Junior/Mid/Senior level Engineer) would be required to gain proficiency on it?
 - How familiar am I with the language?
-Quite a few languages, especially on the JVM, have libraries that
+
+Quite a few languages, especially on the JVM or in Pyhton, have libraries that
 
 How fast is the compilation of projects?
 
