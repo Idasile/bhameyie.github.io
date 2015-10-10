@@ -1,58 +1,34 @@
- <!-- Homepage Slider -->
-<div id="home-slider">  
-    <div class="overlay"></div>
-
-  <div class="container">
-      <div class="row">
-          <div class="span12">
-                <div class="slider-text">
-                    <div id="slidecaption"></div>
-                </div>
-            </div>
-        </div>
-    </div>   
-  
-  <div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#blog"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
 <!-- Header -->
-<header>
-    <div class="sticky-nav">
-      <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-        <div id="logo">
-          <a id="goUp" href="/index.html" title="47 Ronin">{{ site.title }}</a>
-        </div>
-        
-        <nav id="menu">
-          <ul id="menu-nav">
-              <li><a href="/index.html" class="external">Home</a></li>
-               {% for page in site.pages %}
-          {% if page.title %}
-          <li><a class="external" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-        <li> <a class="external" href="https://docs.google.com/forms/d/1yyiiKkuDHtsHdIMDjaIBQQ8SVy-19YzSdvCzLa7jqxM/viewform">Survey</a> </li>
-            </ul>
-        </nav>
-        
-    </div>
+<header id="header" class="alt">
+  <h1><a id="goUp" href="/index.html" title="47 Ronin">{{ site.title }}</a></h1>
+  <nav id="nav">
+    <ul id="menu-nav">
+        <li><a href="/index.html" class="external">Home</a></li>
+         {% for page in site.pages %}
+    {% if page.title %}
+    <li><a class="external" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+      </ul>
+  </nav>
 </header>
 <!-- End Header -->
+<section id="banner">
+  <h2>{{ site.title }}</h2>
+  <span class="font-icon-blockquote">
+  <p>{{ site.description }}</p>
+  </span>
+  <ul class="actions">
+    <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class=" button special fa fa-rss-square">Feed</a></li>
+  </ul>
+</section>
 
 <div class="big-quote page">
   <div class="container">
       <div class="row">
           <div class="span12">
-              <p>{{ site.description }}</p>
-                <span class="font-icon-blockquote"></span>
+              <p></p>
+
             </div>
         </div>
     </div>

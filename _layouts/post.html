@@ -1,37 +1,23 @@
 ---
 layout: default
 ---
-<div id="blog" class="page-alternate">
-	<div class="container">
-    	<div class="row">
-        	<div class="span12">
-            
-             	<!-- Start Article -->
+{% if page.thumbnail %}
+<div class="post-thumb">
+				<img class="image featured" src="{{ page.thumbnail }}" width="200" height="200"/>
+	</div>
+{% endif %}
+<div id="blog" class="box">
             	<article class="post">
-                	{% if page.thumbnail %}
-                <div class="post-thumb">
-                      <a href="#">
-                          <img src="{{ page.thumbnail }}" width="100" height="100"/>
-                        </a>
-                    </div>
-  {% endif %}
-                	<h2 class="entry-title">
-                    	<a href="#">{{ page.title }}</a>
-                    </h2>
+
+                	<h2 class="entry-title"> {{ page.title }} </h2>
                     <div class="entry-meta">
-                        <span class="author">{% if page.author %} • {{ page.author }}{% endif %}</span>
-                        <span class="divider">/</span>
                         <span class="published">{{ page.date | date: "%b %-d, %Y" }}</span>
-                        <span class="divider">/</span>
-                        <span class="comment-count">
-                        {% if page.meta %} • {{ page.meta }}{% endif %}
-                        </span>
                     </div>
-                    
+
                     <div class="entry-content">
                     	 {{ content }}
-                    </div>     
-                    
+                    </div>
+
                     <div class="entry-meta entry-footer">
                     	{% if page.meta %} • {{ page.meta }}{% endif %}
 
@@ -52,7 +38,7 @@ layout: default
                         </span>
 
                     </div>
-             
+
                 </article>
 
                 <span>
@@ -81,11 +67,8 @@ layout: default
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
-                    <!-- End Comments --> 
-                    </div>
-                 </div>
-        </div>
-    </div>
+
+                    <!-- End Comments -->
+
 </div>
 <!-- End Blog Section -->

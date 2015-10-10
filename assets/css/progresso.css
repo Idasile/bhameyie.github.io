@@ -1,0 +1,61 @@
+
+/* ==================================================
+   Progress Bars
+================================================== */
+
+.page .progress {
+	background-color: #E0E0E0;
+}
+
+.page-alternate .progress {
+	background-color: #E0E0E0;
+}
+
+.progress-bar {
+	margin: 26px 0 0;
+}
+
+.progress {
+	position: relative;
+	background-image: none;
+	height: 46px;
+	-webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+			box-shadow: none;
+
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	margin: 0;
+}
+
+.progress .bar {
+	background-color: #FF8C53;
+	background-image: none;
+
+	-webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+			box-shadow: none;
+
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.progress .field {
+	position: absolute;
+	color: #FFFFFF;
+	line-height: 44px;
+	left: 20px;
+}
+
+.progress .field-value {
+	position: absolute;
+	color: #FFFFFF;
+	line-height: 44px;
+	right: 20px;
+}

@@ -3,12 +3,12 @@ author: Boguste
 layout: post
 title: "Docker: the what, the why, the how"
 date: 2015-01-23 15:47:25 -0500
-tags: docker deployment testing environment 
+tags: docker deployment testing environment
 categories: cloud distributed-systems
 thumbnail: https://c2.staticflickr.com/8/7336/14098888813_1047e39f08.jpg
 ---
 
-[In a previous post]({% post_url 2015-01-16-terraform-dot-io-all-hail-infrastructure-as-code %}), I briefly threw in a few "buzzwords", namely Immutable Infrastructure and Docker. To start, Docker is more than just a new buzzword increasingly appearing on folks resumes. It is a tool built to solve a particular problem: the Immutable Infrastucture - also refered to as [Immutable Servers](http://martinfowler.com/bliki/ImmutableServer.html). The approach that it takes to achieve that is fairly different from automated configuration tools (ACL), and is one that has opened multiple possibilities for both devs and ops folks. 
+[In a previous post]({% post_url 2015-01-16-terraform-dot-io-all-hail-infrastructure-as-code %}), I briefly threw in a few "buzzwords", namely Immutable Infrastructure and Docker. To start, Docker is more than just a new buzzword increasingly appearing on folks resumes. It is a tool built to solve a particular problem: the Immutable Infrastucture - also refered to as [Immutable Servers](http://martinfowler.com/bliki/ImmutableServer.html). The approach that it takes to achieve that is fairly different from automated configuration tools (ACL), and is one that has opened multiple possibilities for both devs and ops folks.
 
 <div class="small-quote post">
 	<p>"Docker is a platform for developers and sysadmins to develop, ship, and run applications. Docker lets you quickly assemble applications from components and eliminates the friction that can come when shipping code. Docker lets you get your code tested and deployed into production as fast as possible."</p>
@@ -17,11 +17,11 @@ thumbnail: https://c2.staticflickr.com/8/7336/14098888813_1047e39f08.jpg
 
 #What is Docker?
 
-Docker is a packaging tool and application runtime. With it you are able to assemble/package an image which you can then run in a container. 
+Docker is a packaging tool and application runtime. With it you are able to assemble/package an image which you can then run in a container.
 
 In Docker parlance, an image is an immutable layer. You can think of them as the layered segment of a space rocket. Each parts sits on top of the other and depends on the previous one.
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/3/34/Srb_16.png" align="middle" alt="Sure took a while"/>
+<img  class="image" src="http://upload.wikimedia.org/wikipedia/commons/3/34/Srb_16.png" align="middle" alt="Sure took a while"/>
 
 **@Wikipedia**
 
@@ -36,7 +36,7 @@ In the above file, the source image is ubuntu. Every command that would execute 
 docker build -t myUser/myImageName:latest -
 {% endhighlight %}
 
-The above command would result in the final image built to be tagged with the name of 'myUser/myImageName' and the version 'latest'. If I were to push it to docker hub, I could then refer to it from a seperate Dockerfile as the source/parent image (FROM). If I were to run it, docker would run the image in a container, i.e an isolated environment in which the built image would be executed assuming an ENTRYPOINT or CMD has been defined. 
+The above command would result in the final image built to be tagged with the name of 'myUser/myImageName' and the version 'latest'. If I were to push it to docker hub, I could then refer to it from a seperate Dockerfile as the source/parent image (FROM). If I were to run it, docker would run the image in a container, i.e an isolated environment in which the built image would be executed assuming an ENTRYPOINT or CMD has been defined.
 
 {% highlight bash %}
 docker run -d --name=some_name -t myUser/myImageName:latest
@@ -44,7 +44,7 @@ docker run -d --name=some_name -t myUser/myImageName:latest
 
 The container itself is like, well, a container. Let's say you had a band, and you put them in a container for whichever reason.
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/a6/The_Loud_Family_at_Hotel_Utah.jpg" align="middle" alt="The Loud Family" width="50%"/>
+<img class="image" src="http://upload.wikimedia.org/wikipedia/commons/a/a6/The_Loud_Family_at_Hotel_Utah.jpg" align="middle" alt="The Loud Family" width="50%"/>
 
 For them to play music, you may want to give them guitars, mics, and other necessary instruments. For you to listen to the music outside of the container walls and communicate with the players, you may want to expose some sort of communication channel. Then when you close the container and tell the band to play, they would be able to do so without interference, yet you would still be able to listen.
 
@@ -93,15 +93,15 @@ Another use case is setting up services that your application may rely upon like
 
 Another use case is that of testing your application. As part of CI process you could build and run the image in a detached container with little difficulty, making it easier to run integration tests on your system from Hosted CI solutions like [CodeShip](https://codeship.com/) or [CircleCI](https://circleci.com/). At the time of this writing, CircleCI has added [Docker support](https://circleci.com/docs/docker), whereas I believe you have to install it with Codeship.
 
-Another possiblie usage: building your own Continuous Integration Service. When using tools like TeamCity you have to make sure that any changes to yout environment gets reverted back and cleaned out. You also have to make sure not to run build configurations that could step on each other's toes. 
+Another possiblie usage: building your own Continuous Integration Service. When using tools like TeamCity you have to make sure that any changes to yout environment gets reverted back and cleaned out. You also have to make sure not to run build configurations that could step on each other's toes.
 With Docker, you could in theory set things up such that at the start of every build, a Dockerfile is generated containing:
 
 <ul>
 <li>all the environment values desired by the user. These could be read from a ci.yml file</li>
-<li>the base image to be used (e.g. 'williamyeh/scala:2.11.2'). Again read from a ci.yml file</li> 
+<li>the base image to be used (e.g. 'williamyeh/scala:2.11.2'). Again read from a ci.yml file</li>
 <li>an 'ADD' statement grabbing the deployment ssh keys</li>
 <li> a 'RUN' statement cloning the repository and a 'WORKDIR' statement setting the location of the repository as the working directory</li>
-<li> a collection of 'RUN' statement matching the set of steps the user wants executed. These could also be read from a ci.yml file</li> 
+<li> a collection of 'RUN' statement matching the set of steps the user wants executed. These could also be read from a ci.yml file</li>
 </ul>
 
 To track the progress of the build, continued invocation of docker logs command could be triggered once the container is running (at the time of this writing I do not believe there is a way to redirect the output from container outside of `docker log`).
@@ -110,12 +110,12 @@ If the user wants build artifacts to be retrieved, you could grab them from the 
 
 One more possibility: you can also use Docker to set up Dev environments. No more "it works on my environment and not on yours". Each dev would have the exact same environment (more or less).
 
-<a href="https://imgflip.com/i/grfeh"><img src="https://i.imgflip.com/grfeh.jpg" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/i/grfeh"><img class="image" src="https://i.imgflip.com/grfeh.jpg" title="made at imgflip.com"/></a>
 
 
 <div class="alert fade in">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
-                    <strong>Warning!</strong><p/> 
+                    <strong>Warning!</strong><p/>
 
 I do maintain that the best way to learn about Docker is to checkout the docs. Nevertheless, I hope this article would have helped in your understanding of what it is, what problem(s) it exists to solve, and how it can be leveraged.
                 </div>

@@ -4,7 +4,7 @@ title: "Choosing a tech stack for your bootstrapped startup"
 date: "2015-09-16"
 tags: startup
 categories: general
-thumbnail: https://pixabay.com/static/uploads/photo/2012/11/28/10/48/samurai-67662_640.jpg
+thumbnail: /assets/images/posts/desk.jpg
 ---
 
 Programming languages. Tons of them have emerged over the years. Some decent great ones. Some decent ones. Some pretty awful ones as well. Most of strong points. All of have weak points. So, which one to c

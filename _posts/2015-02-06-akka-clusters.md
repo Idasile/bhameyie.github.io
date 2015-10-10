@@ -56,26 +56,26 @@ Here's the server code:
 
 {% gist bhameyie/f2ab2d02bb2ec2b68d82 Server.scala %}
 
-Pretty much the same as our previous sample, except we no longer are sending printit message to the actor ourselves. 
+Pretty much the same as our previous sample, except we no longer are sending printit message to the actor ourselves.
 
 Now let's look at the client.
 
 {% gist bhameyie/f2ab2d02bb2ec2b68d82 Client.scala %}
 
-The client no longer need to hold a reference to the **PrinterDude** actor, which can now live solely on the server. 
+The client no longer need to hold a reference to the **PrinterDude** actor, which can now live solely on the server.
 
 From looking at this code however, there are some obvioud pitfalls:
 
 1. The client now needs to know about the full path to the **PrinterDude** actor, thus leaking some of the server's logic to the client due to the hierarchical way [actor paths](http://doc.akka.io/docs/akka/snapshot/general/addressing.html) are determined
-2. The client now need to know the address of the server whose actor system holds the **PrinterDude**, thus exposing itself to failures due the server going down for example. 
+2. The client now need to know the address of the server whose actor system holds the **PrinterDude**, thus exposing itself to failures due the server going down for example.
 
 You could deal with issue #2 by keeping track of the addresses of those servers in a database or by service discovery using a tool like [Consul](https://consul.io/)...but why go that route if a built-in solution exists.
 
 ## Akka Clustering
 
-<img src="http://i.imgur.com/RAKMw1I.jpg" alt="Cluster" width="60%">
+<img class="image" src="http://i.imgur.com/RAKMw1I.jpg" alt="Cluster" width="60%">
 
-In this scenario, our **Server** code from the remoting sample would not change. 
+In this scenario, our **Server** code from the remoting sample would not change.
 
 We would still need to hold a shared jar that would contain our shared contract, as well as our topics/communication channels.
 
@@ -91,7 +91,7 @@ Now here's the client code
 
 {% gist bhameyie/6bb9d49ef0acec14ed81 Client.scala %}
 
-It is no longer sending messages directly to a specific actor. Instead, it entrusts the mediator with the responsibility of forwarding that message to whomever is interested in receiving it, which in our case is the **PrinterDude**. 
+It is no longer sending messages directly to a specific actor. Instead, it entrusts the mediator with the responsibility of forwarding that message to whomever is interested in receiving it, which in our case is the **PrinterDude**.
 
 And finally the configuration that the client and server use.
 
@@ -119,7 +119,3 @@ Akka = awesome.
 Akka + Clustering = awesomer.
 
 Happy coding!
-
-
-
-

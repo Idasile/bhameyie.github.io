@@ -14,7 +14,7 @@ The database. One of the most boring yet most essential piece ever design by man
 
 In my time scouring the web, I have come accross many recommendations, some of which I have followed when working on a side project. Back in 2013, MongoDB was still the rage. All the cool kids were using it. Why not after all? Who could resist the promise of dumping all your nested data in a collection and retrieving it just as easily? Database schemas? Why use that when you can have a dynamic schema instead? Plus, it's all asynchronous and fault tolerant. [Everything is awesome](https://www.youtube.com/watch?v=StTqXEQ2l-Y)....
 
-<img src="http://cdn.meme.am/instances/500x/59835196.jpg" alt="trap" width="70%">
+<img class="image" src="http://cdn.meme.am/instances/500x/59835196.jpg" alt="trap" width="70%">
 
 **Note to self**: don't believe every you read on the internet.
 
@@ -45,11 +45,11 @@ Assuming you use a service like [Compose.io](https://www.compose.io/) to host, s
 
 If you're bootstrapping your startup and have limited time, but some resources, I could see how you could build your application with MongoDB initially to get a proof of concept and get funding, or even to get an MVP to test the market and fail fast. It is also possible like that your use case would work just fine with MongoDB like [Server Density's](https://blog.serverdensity.com/tech-behind-time-series-graphs-2bn-docs-per-day-30tb-per-month/).
 
-<img src="http://cdn.meme.am/instances/500x/59837724.jpg" alt="more than mongo" width="70%">
+<img class="image" src="http://cdn.meme.am/instances/500x/59837724.jpg" alt="more than mongo" width="70%">
 
 ## Cassandra
 
-There are plenty of alternatives to MongoDB. Some of the choices out there range from the good 'ol PostgreSql, [Riak](http://basho.com/riak/) and [Cassandra](http://cassandra.apache.org/), to up and coming (and still improving) [RethinkDb](http://rethinkdb.com/). 
+There are plenty of alternatives to MongoDB. Some of the choices out there range from the good 'ol PostgreSql, [Riak](http://basho.com/riak/) and [Cassandra](http://cassandra.apache.org/), to up and coming (and still improving) [RethinkDb](http://rethinkdb.com/).
 
 My personal criteria for determining which database to use are:
 

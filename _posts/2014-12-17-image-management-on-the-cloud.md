@@ -10,7 +10,7 @@ thumbnail: http://upload.wikimedia.org/wikipedia/commons/8/82/Img_51614_critical
 
 When building social media apps or other systems that involve user generated content which include images (profile images, blog post images, etc...), it is not long until we get to the important question of wether to build and maintain our own image management system, or to rely on existing services to help us achieve that purpose.
 
-Building it ourselves requires an upfront cost of building and managing servers (hardware and software) to receive and service those images in a timely manner, but it also has the hidden cost of maintaining those systems, and building a secure API to allow interaction with those resources. 
+Building it ourselves requires an upfront cost of building and managing servers (hardware and software) to receive and service those images in a timely manner, but it also has the hidden cost of maintaining those systems, and building a secure API to allow interaction with those resources.
 
 If you absolutely must do it yourself, there are many ways to approach this.
 
@@ -59,12 +59,11 @@ Programmatic access to AWS s3 is achievable using their SDKs which I have found 
 
 You could combine the use of AWS S3 with [AWS CloudFront](http://aws.amazon.com/cloudfront/), Amazon's CDN. You could actually use the latter with your file storage servers from option 1.
 
-## Cloudinary 
+## Cloudinary
 
-<img src="/assets/img/memes/cloudinary-imagemanagement-manipulation.jpg" align="middle" alt="Cloudinary"/>
+<img class="image" src="/assets/images/memes/cloudinary-imagemanagement-manipulation.jpg" align="middle" alt="Cloudinary"/>
 
 As stated earlier, Cloudinary is a Cloud-based Image Management service. You can upload images (and videos), download them, delete them. One thing that, to me, gives Cloudinary an edge over other services is the ability to manipulate pictures. Using their SDKs or their REST API, you can resize pictures, detect faces, and even apply image filters a la Instagram.
 
 
 Image management is made easy these days by a plethora tools and services. How you proceed depends largely on your requirement and the needs of your business. I hope this post will help you make the right call.
-

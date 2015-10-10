@@ -16,11 +16,11 @@ When I was looking up how to do continuous deployment and build immutable infras
 
 The solution that worked for me: [Terraform](https://terraform.io) for setting up all my VMs and [Docker](https://www.docker.com/) to package my application.
 
-<img src="http://cdn.meme.am/instances/500x/58154129.jpg" align="middle" alt="Sure took a while"/>
+<img class="image" src="http://cdn.meme.am/instances/500x/58154129.jpg" align="middle" alt="Sure took a while"/>
 
 There's plenty of information available on Docker, so I will not discuss it at length in this post. The simplest explanation I can give you on this is that docker is way to build application in layered images that can be run in a container. Once started, the container is "immutable", i.e while you can change things on the VM it is running on (which would go against having Immutable Infrastructure), to my knowledge you cannot change or update the container itself. You can stop it, start it, restart it, attach to it, but you cannot change it...and that's a very good thing.
 
-Terraform.io is a utility written by the guys at Hashicorp (the company that built Vagreant). Its purpose is to provide means to code your infrastructure, set it all up and destroy it. It is built on [Go](https://golang.org/) yet has a rubyish feel to it. It enables the definition of variables and modules, and also comes bundled with quite a few provisioners for setting up resources on DigitalOcean and AWS to name a few. One of its greatest strength to me is the ability to reference resources and their properties in your terraform code. The output of terraform is also JSON parsable, which also opens up a host of possibilities. 
+Terraform.io is a utility written by the guys at Hashicorp (the company that built Vagreant). Its purpose is to provide means to code your infrastructure, set it all up and destroy it. It is built on [Go](https://golang.org/) yet has a rubyish feel to it. It enables the definition of variables and modules, and also comes bundled with quite a few provisioners for setting up resources on DigitalOcean and AWS to name a few. One of its greatest strength to me is the ability to reference resources and their properties in your terraform code. The output of terraform is also JSON parsable, which also opens up a host of possibilities.
 
 One thing to keep in mind: Terraform is not meant to replace utilities like Chef or Puppet. Quite the contrary, you can still leverage them to configure your VM.
 
@@ -47,4 +47,3 @@ To run it:
 Simple isn't it? For my actual code, I have a ruby script that loads up the appropriate values in my terraform variables file based on whether I am deploying from develop vs master, and backs up the resulting terraform outputs to AWS S3 in a versioned folder and sends me a [HipChat](https://www.hipchat.com/) message to tell me whether or not it was all successful. This enables me to destroy prior versions of my infrastructure upon successful creation of the new version, and it also helps me downgrade versions more easily. The script also determines which VMs to create depending on my current branch. In production, as per my example, I use an ELB. I do not do that in UAT so as to reduce my costs.
 
 Terraform is obviously not a silver bullet, but it is a great tool to have on your devops utility belt. As it continues to mature towards its in 1.0 release, I'm confident it will become even more awesome.
-
