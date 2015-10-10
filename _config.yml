@@ -2,7 +2,7 @@
 title: 47 Ronin
 email: muzzled.coder@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A blog about Distributed Systems, the Cloud, Mobile Developement and that Developer life.
+  A blog about Software and Technology.
 baseurl: ""
 url: "http://47ron.in" # the base hostname & protocol for your site
 twitter_username: bhameyie
