@@ -16,4 +16,4 @@ thumbnail: http://upload.wikimedia.org/wikipedia/commons/2/23/HokusaiChushingura
 
 # How can Haproxy help with a microservice architecture?
 
-# Using Marathon 
+# Using Marathon
