@@ -10,7 +10,7 @@ thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/AWS_Simple_
 
 *"Microservices"*, the latest architecture buzzword being thrown around to describe perhaps one of the most interesting architecture styles of this decade.
 
-## What are microservices?
+# What are microservices?
 
 To use [Martin Fowler's definition](http://martinfowler.com/articles/microservices.html):
 
@@ -24,8 +24,8 @@ The benefits of such an architecture are plentiful. For example, it makes it eas
 
 Nevertheless, such an approach adds complexity in different areas, one of which is routing.
 
-## Unified routing
-<img class="image" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Double_slip_at_Munich_central.jpg"  align="middle" height="300"/>
+# Unified routing
+<img class="center" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Double_slip_at_Munich_central.jpg"   height="300"/>
 
 Assuming a relatively complex domain broken into multiple Bounded contexts, each of them can have 2 to N amount of microservices, each of them doing specific domain things. When scaling them, that number would grow even larger.
 
@@ -33,9 +33,7 @@ If you're trying to consume those services, you probably don't to want to keep t
 
 This is where [HAproxy](http://www.HAproxy.org/) comes in.
 
-<img class="image" src="http://cdn.meme.am/instances2/500x/2577680.jpg"/>
-
-## HAproxy with microservices
+# HAproxy with microservices
 
 As its name mentions, HAproxy is a high availability proxy server and load balancer that works both for TCP and HTTP. [More information](http://cbonte.github.io/haproxy-dconv/index.html) on it can be found in its docs.
 

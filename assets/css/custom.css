@@ -1,42 +1,8 @@
-.excerpt{
-
-}
-html{
-  font-family: 'Lora', serif;
-}
-body{
-  font-size: 18px;
-}
-.allposts{
-/*  background: #F5F5F5; */
+img{
+  display: block;
+  margin: 0 auto;
 }
 
-.entry-meta,
-.entry-meta a {
-    color: #4C4F55;
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.entry-meta a:hover {
-	color: #FF8C53;
-}
-
-.entry-meta {
-    margin-bottom: 20px;
-}
-
-.post-thumb {
-	margin-bottom: 30px;
-}
-
-.post-thumb a {
-	position: relative;
-	display: block;
-}
-
-.post-thumb img {
-	margin-left: auto;
-  margin-right: auto;
+h1, h2{
+  text-align: center;
 }

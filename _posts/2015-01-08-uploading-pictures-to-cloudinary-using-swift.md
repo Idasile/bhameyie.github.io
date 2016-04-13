@@ -12,11 +12,11 @@ Let say we wanted to upload images captured through our iOS app to the cloud, an
 
 You would think that we could just grab the Cloudinary SDK and get crackin right? right? right ?! Wrong!!
 
-<img class="image" src="/assets/images/memes/objective-from-swift.jpg" align="middle" alt="Objectice-C and Swift"/>
+<img src="/assets/images/memes/objective-from-swift.jpg"  alt="Objectice-C and Swift"/>
 
 As Swift is yet to get good tooling for dependency management (Cocoapods tend not to work), there's a few manual steps you have to perform. Let's get coding!
 
-## <a name="solution"> Solution </a>
+# <a name="solution"> Solution </a>
 
 Let's pretend you have a RESTful service that returns you a list of items, whose properties include the URL of its associated image.
 
@@ -31,7 +31,7 @@ Upon completing the steps indicated in the cloudinary [setup instructions](https
 
 Let's tie it up in Xcode.
 
-<img class="image" src="/assets/images/posts/BridgingExample_cloudinary.png" align="middle" alt="Objectice-C and Swift"/>
+<img src="/assets/images/posts/BridgingExample_cloudinary.png"  alt="Objectice-C and Swift"/>
 
 And finally, the last pieces to make it all work: the actual uploading.
 

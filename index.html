@@ -3,43 +3,54 @@ layout: default
 ---
 
 <div class="allposts">
-  <div class="row">
+  <div class="wrapper style3">
+    <div class="title">Recent Posts</div>
+    <div id="highlights" class="container">
+      <div class="row 150%">
+
 
                     {% for post in paginator.posts %}
 
-                    <div class="6u 12u(narrower)">
+                    <div class="4u 12u(mobile)">
 
-                      <section class="box special">
+                      <section class="highlight">
         {% if post.thumbnail %}
-        <span class="image featured"><img src="{{ post.thumbnail }}" alt="" /></span>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="image featured"><img src="{{ post.thumbnail }}" alt="" /></a>
         {% endif %}
-        <h3>{{ post.title }}</h3>
+        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 <div class="excerpt"> <p> {{ post.excerpt | truncatewords:30 }} </p> </div>
 <ul class="actions">
-  <li><a href="{{ post.url | prepend: site.baseurl }}" class="button special">Continue Reading</a></li>
+  <li><a href="{{ post.url | prepend: site.baseurl }}" class="button style1">Continue Reading</a></li>
 </ul>
 
                             </section>
         </div>
                     {% endfor %}
+</div>
+</div>
 
+<section id="cta">
+  <div class="row">
+    <div class="12u">
+      <ul class="actions">
 
+{% if paginator.previous_page %}
+<a href="{{ paginator.previous_page_path }}" class="button small style2">Previous</a>
+{% else %}
+<a href="#" class="button small style2">Previous</a>
 
-                    </section>
-                    <section id="cta">
-                    {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path }}" class="button small alt">Previous</a>
-                    {% else %}
-                    <span class="prev">Previous</span>
-                    {% endif %}
-                           <span class="number current ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+{% endif %}
 
-                         {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path }}" class="button small">Next</a>
-                    {% else %}
-                    <span class="next ">Next</span>
-                    {% endif %}
-                     </section>
+     {% if paginator.next_page %}
+<li>   <a href="{{ paginator.next_page_path }}" class="button small style3">Next</a></li>
+{% else %}
+<li>   <a href="#" class="button small style3">Next</a></li>
+{% endif %}
+</ul>
+</div>
+</div>
+ </section>
                    </div>
+
                  </div>
 <!-- End Blog Section -->

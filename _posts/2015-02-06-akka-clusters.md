@@ -10,7 +10,7 @@ thumbnail: http://upload.wikimedia.org/wikipedia/commons/6/6d/Akka_mountain.jpg
 
 [Akka](http://akka.io/) has been around for quite some time now, making the life of the modern developer so much easier. For those unfamiliar with it, it is a toolkit for building highly concurrent and distributed systems. It relies heavily on the [Actor model](http://c2.com/cgi/wiki?ActorsModel) for concurrency (i.e actors as entity capable of asynchronously processing messages they receives from other actors in its system) and has capacities for distributing one's application. One of the most recent mechanism it provides to achieve the latter: [Akka clusters](http://doc.akka.io/docs/akka/snapshot/common/cluster.html). Why should you care?
 
-## Vanilla Akka
+# Vanilla Akka
 
 Let's examine how one would normally use it vanilla style. Let's pretend you had a very basic application in which you needed to send messages to an actor that would then print it.
 
@@ -48,7 +48,7 @@ In this simple example, everything is local. I create my actor, keep the resulti
 
 I know what you're thinking. "I could just use [Remoting](http://doc.akka.io/docs/akka/snapshot/scala/remoting.html)". Well...let's see.
 
-## Akka Remoting
+# Akka Remoting
 
 Let's pretend we have the exact same code for our contract, which would now live in a shared jar file. Let's pretend we have 2 application: a client and a server.
 
@@ -71,9 +71,9 @@ From looking at this code however, there are some obvioud pitfalls:
 
 You could deal with issue #2 by keeping track of the addresses of those servers in a database or by service discovery using a tool like [Consul](https://consul.io/)...but why go that route if a built-in solution exists.
 
-## Akka Clustering
+# Akka Clustering
 
-<img class="image" src="http://i.imgur.com/RAKMw1I.jpg" alt="Cluster" width="60%">
+<img src="http://i.imgur.com/RAKMw1I.jpg" alt="Cluster" width="60%">
 
 In this scenario, our **Server** code from the remoting sample would not change.
 
@@ -99,7 +99,7 @@ And finally the configuration that the client and server use.
 
 With this model, no more tight coupling or leakage. The code can be split up cleanly, and the **PrinterDude** and related services could be hosted on entirely seperate boxes without breaking the client. New nodes could be deployed on demand and join the cluster, thus achieving higher availability and potentially increasing the amount of messages the cluster can process. If that wasnt cool enough, you can use **routers** with your cluster.
 
-### A few things to note
+## A few things to note
 
 For clustering to work, the joining nodes need point(s) of contact to help them join the cluster. These points of contact are refered to as "seed nodes". It is recommended to have multiple seed-nodes for obvious reasons. The leader would then be responsible for joining the new member.
 
@@ -113,7 +113,7 @@ One thing that I've found intersting with how Akka does clustering is their Goss
 
 One issue that I have had with using Akka clusters is the [split brain syndrome](http://whatis.techtarget.com/definition/split-brain-syndrome) which can occur when you have auto downing enabled.
 
-## Conclusion
+# Conclusion
 
 Akka = awesome.
 Akka + Clustering = awesomer.

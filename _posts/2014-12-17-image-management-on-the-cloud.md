@@ -14,7 +14,7 @@ Building it ourselves requires an upfront cost of building and managing servers 
 
 If you absolutely must do it yourself, there are many ways to approach this.
 
-### Option 1 : Storing images in the file system
+# Option 1 : Storing images in the file system
 
 Using your preferred cloud providers (e.g. AWS, DigitalOcean, SoftLayer, etc...), you could spin up a VM, preferably one that is optimized for storage like AWS EC2's I2 optimized storage, in which in you would store your images. You will need to set up monitoring tools to alert you when a server is reaching its capacity so as to automatically launch a new instance of the VM where subsequent images would be stored. That way you avoid the risk of having a single large server that would get hit repeatedly and which, if things went awry, could cause you to lose ALL of your images.
 
@@ -26,13 +26,13 @@ You would need to have a query service(s), i.e. an endpoint (e.g. a RESTful serv
 
 With this approach, you'll have your mini Content Delivery Network (CDN).
 
-### Option 2 : Storing images in a database
+# Option 2 : Storing images in a database
 
 The alternative to hosting the files on the file system is to store them in a database. Quite a few databases come prebuilt with optimized options enabling the storage of files like Mongo's [Gridfs](http://docs.mongodb.org/manual/core/gridfs/). You could manage your database yourself, or leverage hosted options like [Compose](https://www.compose.io/).
 
 With this approach, your query service could return the image directly from a MongoDB instance for example. For further optimization, you could make use of [Redis](http://redis.io/) to cache images that are frequently requested so as to not repeatedly hit the database.
 
-### Option 3
+# Option 3
 
 Whatever you can come up. There are many ways to solve this problem.
 
@@ -44,7 +44,7 @@ While a DIY approach gives us some level of flexibility seeing as the solution c
 
 Amongst those services, the 2 most celebrated ones are [AWS S3](http://aws.amazon.com/s3/) and [Cloudinary](http://cloudinary.com/).
 
-## AWS S3
+# AWS S3
 
 AWS S3 has been discussed to death, so I wont go into much details about how it works and why its great.
 
@@ -59,9 +59,9 @@ Programmatic access to AWS s3 is achievable using their SDKs which I have found 
 
 You could combine the use of AWS S3 with [AWS CloudFront](http://aws.amazon.com/cloudfront/), Amazon's CDN. You could actually use the latter with your file storage servers from option 1.
 
-## Cloudinary
+# Cloudinary
 
-<img class="image" src="/assets/images/memes/cloudinary-imagemanagement-manipulation.jpg" align="middle" alt="Cloudinary"/>
+<img src="/assets/images/memes/cloudinary-imagemanagement-manipulation.jpg"  alt="Cloudinary"/>
 
 As stated earlier, Cloudinary is a Cloud-based Image Management service. You can upload images (and videos), download them, delete them. One thing that, to me, gives Cloudinary an edge over other services is the ability to manipulate pictures. Using their SDKs or their REST API, you can resize pictures, detect faces, and even apply image filters a la Instagram.
 

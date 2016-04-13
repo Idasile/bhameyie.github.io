@@ -1,8 +1,12 @@
 <!-- Header -->
-<header id="header" class="alt">
+				<div id="header-wrapper" class="wrapper">
+<div id="header">
+  <div id="logo">
   <h1><a id="goUp" href="/index.html" title="47 Ronin">
-    <img src="/assets/images/logo.png"/></a>
+    <img src="/assets/images/logo.png"/> {{ site.title }}</a>
   </h1>
+  <p> {{ site.description }} </p>
+</div>
   <nav id="nav">
     <ul id="menu-nav">
         <li><a href="/index.html" class="external">Home</a></li>
@@ -11,27 +15,11 @@
     <li><a class="external" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
     {% endif %}
   {% endfor %}
+  <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="fa fa-rss-square">Feed</a></li>
+
       </ul>
   </nav>
-</header>
+</div>
 <!-- End Header -->
-<section id="banner">
-  <h2>{{ site.title }}</h2>
-  <span class="font-icon-blockquote">
-  <p>{{ site.description }}</p>
-  </span>
-  <ul class="actions">
-    <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class=" button special fa fa-rss-square">Feed</a></li>
-  </ul>
-</section>
 
-<div class="big-quote page">
-  <div class="container">
-      <div class="row">
-          <div class="span12">
-              <p></p>
-
-            </div>
-        </div>
-    </div>
 </div>

@@ -14,7 +14,7 @@ The short answer: **everything**.
 
 **@Copyright David Pilcher**
 
-<img class="image" src="http://theart.name/uploads/posts/2010-08/1282684592_twitter_fail_whale_wallpaper_by_shannabanan_o_rama.png" alt="Twitter Fail Whale" width="70%">
+<img src="http://theart.name/uploads/posts/2010-08/1282684592_twitter_fail_whale_wallpaper_by_shannabanan_o_rama.png" alt="Twitter Fail Whale" width="70%">
 
 Many other startups have succumbed under the weight of overnight success as their systems were not designed to scale. The immediate consequence was that their website/services became unresponsive, causing even the most patient users to take their business elsewhere. Reactive design helps prevent that.
 
@@ -30,7 +30,7 @@ Finally, using non-blocking communication removes synchronous waits and makes it
 
 In short: less whales, more smiles.
 
-<a href="https://imgflip.com/i/gwn2o"><img class="image" src="https://i.imgflip.com/gwn2o.jpg" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/i/gwn2o"><img src="https://i.imgflip.com/gwn2o.jpg" title="made at imgflip.com"/></a>
 
 Hopefully this is enough to at least get you interested to find out more. If you're curious, more information can also be obtained from Roland Kuhn's upcoming book on [reactive design](http://manning.com/kuhn/) and Vaugh Vernon's [Reactive Enterprise](https://www.safaribooksonline.com/library/view/reactive-enterprise-with/9780133846904/) book.
 

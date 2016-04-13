@@ -21,7 +21,7 @@ Docker is a packaging tool and application runtime. With it you are able to asse
 
 In Docker parlance, an image is an immutable layer. You can think of them as the layered segment of a space rocket. Each parts sits on top of the other and depends on the previous one.
 
-<img  class="image" src="http://upload.wikimedia.org/wikipedia/commons/3/34/Srb_16.png" align="middle" alt="Sure took a while"/>
+<img  class="image" src="http://upload.wikimedia.org/wikipedia/commons/3/34/Srb_16.png"  alt="Sure took a while"/>
 
 **@Wikipedia**
 
@@ -44,7 +44,7 @@ docker run -d --name=some_name -t myUser/myImageName:latest
 
 The container itself is like, well, a container. Let's say you had a band, and you put them in a container for whichever reason.
 
-<img class="image" src="http://upload.wikimedia.org/wikipedia/commons/a/a6/The_Loud_Family_at_Hotel_Utah.jpg" align="middle" alt="The Loud Family" width="50%"/>
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/a6/The_Loud_Family_at_Hotel_Utah.jpg"  alt="The Loud Family" width="50%"/>
 
 For them to play music, you may want to give them guitars, mics, and other necessary instruments. For you to listen to the music outside of the container walls and communicate with the players, you may want to expose some sort of communication channel. Then when you close the container and tell the band to play, they would be able to do so without interference, yet you would still be able to listen.
 
@@ -110,7 +110,7 @@ If the user wants build artifacts to be retrieved, you could grab them from the 
 
 One more possibility: you can also use Docker to set up Dev environments. No more "it works on my environment and not on yours". Each dev would have the exact same environment (more or less).
 
-<a href="https://imgflip.com/i/grfeh"><img class="image" src="https://i.imgflip.com/grfeh.jpg" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/i/grfeh"><img src="https://i.imgflip.com/grfeh.jpg" title="made at imgflip.com"/></a>
 
 
 <div class="alert fade in">

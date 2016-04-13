@@ -16,7 +16,7 @@ When I was looking up how to do continuous deployment and build immutable infras
 
 The solution that worked for me: [Terraform](https://terraform.io) for setting up all my VMs and [Docker](https://www.docker.com/) to package my application.
 
-<img class="image" src="http://cdn.meme.am/instances/500x/58154129.jpg" align="middle" alt="Sure took a while"/>
+<img src="http://cdn.meme.am/instances/500x/58154129.jpg"  alt="Sure took a while"/>
 
 There's plenty of information available on Docker, so I will not discuss it at length in this post. The simplest explanation I can give you on this is that docker is way to build application in layered images that can be run in a container. Once started, the container is "immutable", i.e while you can change things on the VM it is running on (which would go against having Immutable Infrastructure), to my knowledge you cannot change or update the container itself. You can stop it, start it, restart it, attach to it, but you cannot change it...and that's a very good thing.
 
