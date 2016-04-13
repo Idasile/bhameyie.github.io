@@ -1,25 +1,19 @@
-<!-- Header -->
-				<div id="header-wrapper" class="wrapper">
-<div id="header">
-  <div id="logo">
-  <h1><a id="goUp" href="/index.html" title="47 Ronin">
-    <img src="/assets/images/logo.png"/> {{ site.title }}</a>
-  </h1>
-  <p> {{ site.description }} </p>
+
+<div class="wrapper">
+  <center> <a href="/index.html"><div class="site-title">   {{site.title}} </div></a></center>
 </div>
-  <nav id="nav">
-    <ul id="menu-nav">
-        <li><a href="/index.html" class="external">Home</a></li>
-         {% for page in site.pages %}
-    {% if page.title %}
-    <li><a class="external" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+<div class="wrapper site-description">
+<center>  {{site.description}} </center>
+</div>
+<div class="wrapper">
+  <div class="trigger site-navigation">
+    <a class="page-link" href="/index.html">HOME</a><span class="exclamationMark">/</span>
+
+    {% for sitePage in site.pages %}
+    {% if sitePage.title %}
+
+    <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a><span class="exclamationMark">/</span>
     {% endif %}
-  {% endfor %}
-  <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="fa fa-rss-square">Feed</a></li>
-
-      </ul>
-  </nav>
-</div>
-<!-- End Header -->
-
+    {% endfor %}
+  </div>
 </div>

@@ -1,11 +1,20 @@
 ---
 layout: default
 ---
-    <!-- End Title Page -->
-    <div id="intro-wrapper" class="wrapper style2">
-  		<div class="title">{{ page.title }}</div>
-      <section>
- {{ content }}
-  	</div>
-</div>
-<!-- End About Section -->
+<article class="post">
+
+  <header class="post-header">
+  <!--  <h1 class="post-title">{{ page.title }}</h1>-->
+  </header>
+
+  {{%if page.tagline%}}
+  <div class="tagline">
+  <span class="page-title">{{page.title}}</span> <span class="page-tagline"><em>{{page.tagline}}</em></span>
+  </div>
+  {{% endif %}}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

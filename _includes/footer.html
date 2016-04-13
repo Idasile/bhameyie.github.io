@@ -1,38 +1,40 @@
-<div id="footer-wrapper" class="wrapper">
-  <div class="title">More of me</div>
+<footer class="site-footer">
 
-<div id="footer" class="container">
+  <div class="wrapper">
 
-  <div class="row">
-    <section class="feature-list small">
-      <div class="row">
-        <div>
-          <section>
-            <h3 class="icon fa-comment">Social</h3>
-            <p>
-            <a href="https://twitter.com/bhameyie" class="icon fa-twitter"><span class="label">Twitter</span></a>
-            <a href="https://github.com/{{ site.github_username }}" class="icon fa-github"><span class="label">Github</span></a>
-            <a href="http://www.linkedin.com/in/bhameyie" class="icon fa-linkedin"><span class="label">LinkedIn</span></a>
-</p>
-          </section>
-        </div>
-        <div>
-          <section>
-            <h3 class="icon fa fa-info-circle">Other sites</h3>
-            <p>
-              <a href="https://bhameyie.wordpress.com"><i class="fa fa-rss-square"></i> Old Blog</a><br/>
-              <a href="https://bhameyie.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> About Me</a><br/>
+    <h2 class="footer-heading small-site-title">{{ site.title }}</h2>
 
-            </p>
-          </section>
-        </div>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list footer-content">
+          <li>Powered By Gravity</li>
+          <li>Made with <i class="fa fa-heart"></i> on <a href="jekyll.com"><span style="color:black">{ { Jekyll } }</a></span></li>
+
+
+        </ul>
       </div>
-    </section>
-</div>
-</div>
-<div id="copyright">
-  <ul>
-    <li>&copy;2016 Boguste Hameyie</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-  </ul>
-</div>
-</div>
+
+      <div class="footer-col footer-col-2 footer-content">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3 site-description">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
