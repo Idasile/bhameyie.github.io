@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'jemoji'
 gem 'jekyll-paginate'
 gem 'pygments.rb'
 gem 'jekyll-gist'

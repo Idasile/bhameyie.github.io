@@ -3,7 +3,12 @@ author: Boguste
 layout: post
 title: "The rise of reactive systems: why?"
 date: 2015-01-28 7:14:45 -0500
-tags: reactive reactive-systems reactive-design design architecture
+tags:
+- reactive
+- reactive-systems
+- reactive-design
+- design
+- architecture
 categories: distributed-systems architecture
 thumbnail: https://c1.staticflickr.com/3/2633/3853784154_d6df0bb3e5.jpg
 ---

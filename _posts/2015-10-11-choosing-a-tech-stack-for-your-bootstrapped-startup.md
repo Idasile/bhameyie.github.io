@@ -2,7 +2,8 @@
 layout: post
 title: "Choosing a tech stack for your bootstrapped startup"
 date: "2015-10-11"
-tags: startup
+tags:
+- startup
 categories: general
 thumbnail: /assets/images/posts/desk.jpg
 ---

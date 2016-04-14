@@ -3,7 +3,12 @@ author: Boguste
 layout: post
 title: "Do No Harm: Short tale on Versioning"
 date: 2015-06-03 9:20:43 -0400
-tags: best-practices general semantic-versioning versioning package-management
+tags:
+- best-practices
+- general
+- semantic-versioning
+- versioning
+- package-management
 categories: donoharm
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/2/23/HokusaiChushingura.jpg
 ---

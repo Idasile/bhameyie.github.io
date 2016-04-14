@@ -3,7 +3,8 @@ author: Boguste
 layout: post
 title: "Accepting feedback"
 date: 2015-01-27 22:32:59 -0500
-tags: general
+tags:
+- general
 categories: general
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/2/23/HokusaiChushingura.jpg
 ---

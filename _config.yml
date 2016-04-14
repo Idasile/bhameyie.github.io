@@ -19,3 +19,14 @@ paginate_path: /page:num
 gems:
   - jekyll-gist
   - jekyll-paginate
+events:
+  - image: /assets/images/timeline/spidertocat.png
+    date: "September 2011 - Today"
+    description: "Working in the financial industry"
+  - image: /assets/images/timeline/baracktocat.jpg
+    date: "June 2011"
+    description: "Graduated with a Bachelor and a Master of Science in Software Engineering"
+
+# First image of the Timeline
+
+timeline-img: https://avatars0.githubusercontent.com/u/1227030?v=3&s=460

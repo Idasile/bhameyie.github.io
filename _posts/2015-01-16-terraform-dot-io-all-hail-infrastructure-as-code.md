@@ -3,7 +3,14 @@ author: Boguste
 layout: post
 title: "Terraform.io : all hail infrastructure as code"
 date: 2015-01-16 06:40:00 -0500
-tags: terraform docker immutable infrastructure continuous deployment automated
+tags:
+- terraform
+- docker
+- immutable
+- infrastructure
+- continuous
+- deployment
+- automated
 categories: cloud distributed-systems
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kirkuk_Infrastructure_Rebuild.jpg/640px-Kirkuk_Infrastructure_Rebuild.jpg
 ---

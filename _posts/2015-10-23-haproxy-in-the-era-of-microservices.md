@@ -3,7 +3,12 @@ author: Boguste
 layout: post
 title: "HAproxy in the era of Microservices"
 date: 2015-10-23 12:27:46 -0400
-tags: cloud microservices architecture mesosphere consul
+tags:
+- cloud
+- microservices
+- architecture
+- mesosphere
+- consul
 categories: cloud architecture
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/AWS_Simple_Icons_Networking_Amazon_Elastic_Load_Balancer.svg/768px-AWS_Simple_Icons_Networking_Amazon_Elastic_Load_Balancer.svg.png
 ---

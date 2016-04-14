@@ -3,7 +3,11 @@ author: Boguste
 layout: post
 title: "Distributed logging"
 date: 2015-02-27 15:11:34 -0500
-tags: distributed distributed-systems distributed-logging centralized-logs
+tags:
+- distributed
+- distributed-systems
+- distributed-logging
+- centralized-logs
 categories: cloud
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/9/93/Stacked_logs_-_geograph.org.uk_-_285052.jpg
 ---

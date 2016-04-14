@@ -3,8 +3,13 @@ author: Boguste
 layout: post
 title: "Modern image management On the Cloud"
 date: 2014-12-17 11:48:58
-tags: aws s3 cloudfront ec2 cloudinary image-management
-categories: cloud
+tags:
+- aws
+- s3
+- cloudfront
+- ec2
+- cloudinary
+- image-management
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/8/82/Img_51614_critical-data-centre-at-uni-of-hertfordshire.jpeg
 ---
 

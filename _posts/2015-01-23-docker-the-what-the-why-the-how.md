@@ -3,7 +3,11 @@ author: Boguste
 layout: post
 title: "Docker: the what, the why, the how"
 date: 2015-01-23 15:47:25 -0500
-tags: docker deployment testing environment
+tags:
+- docker
+- deployment
+- testing
+- environment
 categories: cloud distributed-systems
 thumbnail: https://c2.staticflickr.com/8/7336/14098888813_1047e39f08.jpg
 ---

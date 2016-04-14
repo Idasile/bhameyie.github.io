@@ -3,7 +3,10 @@ author: Boguste
 layout: post
 title: "Cassandra vs MongoDB for a bootstrapped startup"
 date: 2015-03-06 9:49:10 -0500
-tags: database cassandra startup
+tags:
+- database
+- cassandra
+- startup
 categories: general cloud
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/500px-Cassandra_logo.svg.png
 ---

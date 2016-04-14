@@ -3,7 +3,12 @@ author: Boguste
 layout: post
 title: "Akka clusters"
 date: 2015-02-06 20:22:39 -0500
-tags: akka cluster reactive reactive-systems reactive-design
+tags:
+- akka
+- cluster
+- reactive
+- reactive-systems
+- reactive-design
 categories: cloud distributed-systems architecture
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/6/6d/Akka_mountain.jpg
 ---
