@@ -1,19 +1,26 @@
+<section class="main-header {% if page.path == 'index.html' %}home{% else %}regular{% endif %}">
 
-<div class="wrapper">
-  <center> <a href="/index.html"><div class="site-title">   {{site.title}} </div></a></center>
-</div>
-<div class="wrapper site-description">
-<center>  {{site.description}} </center>
-</div>
-<div class="wrapper">
-  <div class="trigger site-navigation">
-    <a class="page-link" href="/index.html">HOME</a><span class="exclamationMark">/</span>
+    <div class="vertical-container">
 
-    {% for sitePage in site.pages %}
-    {% if sitePage.title %}
+    	<div class="wrapper clearfix">
 
-    <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a><span class="exclamationMark">/</span>
-    {% endif %}
-    {% endfor %}
-  </div>
-</div>
+	        <header>
+	        	{% if page.path != 'index.html' %}<a href="/">{% endif %}
+		            <h1 id="main-title">Boguste Hameyie</h1>
+		            <h2 id="main-subtitle">A Pragmatic Software Engineer</h2>
+	        	{% if page.path != 'index.html' %}</a>{% endif %}
+	        </header>
+
+	        <nav id="main-nav" role="navigation">
+				<a href="/about/" class="{% if page.url == '/about/index.html' %}selected{% endif %}">About</a>
+				<a href="/blog/" class="{% if page.url == '/blog/index.html' %}selected{% endif %}">Blog</a>
+				<a href="https://twitter.com/bhameyie">Contact</a>
+
+
+			</nav>
+
+		</div>
+
+    </div>
+
+</section>

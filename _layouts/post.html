@@ -1,24 +1,67 @@
----
-layout: default
----
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+{% include top.html %}
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline"><a class="post-title-link"  href="{{page.url}}">{{ page.title }}</a></h1>
-  <center>  <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-    {% if page.author %}
-     <div class="">
-       <center><p ><strong><span class="authorKeyword">Author</span><span class="small-site-title"> <h2 style="letter-spacing: 3px !important;
-       text-transform: uppercase !important;">{{page.author}}</h2></span></strong></p></center>
+{% include header.html %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<article class="main-content">
 
-     </div>
-     {% endif %}
-   </center>
-  </header>
+    <div class="wrapper">
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+        <header class="section-header">
+            <h1 class="section-title">{{ page.title }}</h1>
+            <span class="section-subtitle"><time datetime="{{ page.date }}" pubdate>{{ page.date | date_to_string }}</time>{% for tag in page.tags %}, <a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>{% endfor %}</span>
+        </header>
 
+        <section class="post-content">
+
+        	{{ page.content | markdownify }}
+
+            <div class="post-nav">
+
+                <span class="section-subtitle">Share On:<br> <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><br>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+  lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script><br>
+<div class="fb-share-button" data-href="{{page.url}}" data-layout="button_count" data-mobile-iframe="true"></div> </span><br>
+
+				{% if page.previous.url %}
+                	<a href="{{page.previous.url}}" class="button">Prev</a>
+				{% endif %}
+				{% if page.next.url %}
+                	<a href="{{page.next.url}}" class="button">Next</a>
+				{% endif %}
+
+            </div>
+            <hr/>
+            <div id="comments">
+                                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = '47roninblog'; // required: replace example with your forum shortname
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                                <!-- End Comments -->
+        </section>
+
+    </div>
 
 </article>
+
+{% include footer.html %}
+
+{% include bottom.html %}

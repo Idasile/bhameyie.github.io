@@ -1,17 +1,21 @@
 # Site settings
-title: 47 Ronin
+title: Bhameyie
+description: A Pragmatic Software Engineer
 email: muzzled.coder@gmail.com
 baseurl: ""
-url: "http://47ron.in" # the base hostname & protocol for your site
+url: "http://47ron.in"
+base: http://47ron.in
 twitter_username: bhameyie
 github_username: bhameyie
-
 paginate: 3
 
 destination: ./_site
 
 # Build settings
 markdown: kramdown
-
+highlighter: pygments
 permalink:     /blog/:year/:month/:day/:title.html
 paginate_path: /page:num
+gems:
+  - jekyll-gist
+  - jekyll-paginate
