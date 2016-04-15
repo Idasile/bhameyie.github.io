@@ -26,13 +26,14 @@ Well, not quite. Having played with MongoDB and having read the experiences of o
 To be fair, I love MongoDB. It was fairly easy to get started with. It was awesome. The database was indeed boring...until the application's complexity and modeling need started to increase.
 
 It can be quite difficult to model a social network using MongoDb. Let's take a naive example. Let's say you have a User class defined as below:
-
-<pre><code class="language-scala">
+{% highlight scala %}
 case class Friend(id:String, since:DateTime)
 case class PotentialFriend(id:String)
 case class RequestedFriendship(id:String, requestedOn:DateTime)
-case class User(id:String, name:String, friends:List[Friend], friendshipToReview:List[PotentialFriend], requestedFriendships:List[RequestedFriendship])
-</code></pre>
+case class User(id:String, name:String, friends:List[Friend],
+                friendshipToReview:List[PotentialFriend],
+                requestedFriendships:List[RequestedFriendship])
+{% endhighlight %}
 
 A fairly simple model. What happens if user X requests the friendship of user Y? Add user X to the friendship to review list of user Y, *AND* add user Y to the requestedFriendships of user X. 2 spots needing to be changed without transactions. Should user Y decide to accept user X's friendship? Now 4 spots would need to be updated, i.e. remove the users from their respective requested friendships and friendship to review lists, and add each other into their respective friends list.
 

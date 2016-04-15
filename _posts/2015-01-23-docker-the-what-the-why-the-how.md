@@ -14,12 +14,11 @@ thumbnail: https://c2.staticflickr.com/8/7336/14098888813_1047e39f08.jpg
 
 [In a previous post]({% post_url 2015-01-16-terraform-dot-io-all-hail-infrastructure-as-code %}), I briefly threw in a few "buzzwords", namely Immutable Infrastructure and Docker. To start, Docker is more than just a new buzzword increasingly appearing on folks resumes. It is a tool built to solve a particular problem: the Immutable Infrastucture - also refered to as [Immutable Servers](http://martinfowler.com/bliki/ImmutableServer.html). The approach that it takes to achieve that is fairly different from automated configuration tools (ACL), and is one that has opened multiple possibilities for both devs and ops folks.
 
-<div class="small-quote post">
-	<p>"Docker is a platform for developers and sysadmins to develop, ship, and run applications. Docker lets you quickly assemble applications from components and eliminates the friction that can come when shipping code. Docker lets you get your code tested and deployed into production as fast as possible."</p>
-    <a href="https://www.docker.com/whatisdocker/">@Docker</a>          
-</div>
+According to their website:
 
-#What is Docker?
+>Docker is a platform for developers and sysadmins to develop, ship, and run applications. Docker lets you quickly assemble applications from components and eliminates the friction that can come when shipping code. Docker lets you get your code tested and deployed into production as fast as possible."
+
+# What is Docker?
 
 Docker is a packaging tool and application runtime. With it you are able to assemble/package an image which you can then run in a container.
 
@@ -54,7 +53,7 @@ For them to play music, you may want to give them guitars, mics, and other neces
 
 Likewise, with a docker container, you can pass it item needed by your environment by passing in environment variables vales(*NOTE*: You do have the option of defining environment variables in you Dockerfile). You can also choose to expose certain ports so as to communicate with the application within the container...although you do have the option to hook into the host's network configuration. Other than that your application would run isolated from its host and from other containers. And once the container starts running it is immutable in that you cannot change its configuration. you cannot update the image. The processes running inside can, as they have write access. From outside the container all we can do is attach to it, stop it, restart it or start it. You also have the ability to commit the internal state of the container into a different image.
 
-#Usages
+# Usages
 
 The most obvious use I would say is Automated Deployment. Instead baking AMIs, and instead of using Chef or Puppet to build up your server and to grab deploy the latest version of your software, you could build a docker image and tag to the appropriate version.
 
@@ -62,7 +61,7 @@ For example, let's say I was building a [Scalatra](http://www.scalatra.org/) app
 
 Here's a sample Dockerfile for the app:
 
-{% highlight bash %}
+{% highlight docker %}
 FROM williamyeh/scala:2.11.2
 
 ADD target/universal/stage /services

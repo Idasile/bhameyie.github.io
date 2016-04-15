@@ -17,9 +17,9 @@ Most avid Twitter users remember the fail whale of the 2010 World Cup that almos
 
 The short answer: **everything**.
 
-**@Copyright David Pilcher**
 
-<img src="http://theart.name/uploads/posts/2010-08/1282684592_twitter_fail_whale_wallpaper_by_shannabanan_o_rama.png" alt="Twitter Fail Whale" width="70%">
+<img src="/images/twitter_fail_whale_wallpaper_by_shannabanan_o_rama.png" alt="Twitter Fail Whale" width="70%">
+**@ShannaBanan-o-rama**
 
 Many other startups have succumbed under the weight of overnight success as their systems were not designed to scale. The immediate consequence was that their website/services became unresponsive, causing even the most patient users to take their business elsewhere. Reactive design helps prevent that.
 
