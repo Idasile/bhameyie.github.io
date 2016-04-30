@@ -1,32 +1,72 @@
-# Site settings
-title: Bhameyie
-description: A Pragmatic Software Engineer
-email: muzzled.coder@gmail.com
-baseurl: ""
-url: "http://47ron.in"
-base: http://47ron.in
-twitter_username: bhameyie
-github_username: bhameyie
-paginate: 3
+# Site setting
+# Site
+title:              47 Ronin
+bio:                'A Pragmatic Software Engineer'
+description:        "Tales of a Software Craftman"
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big.jpg'
+locale:             en_US
+url:                http://47ron.in
 
-destination: ./_site
+# Jekyll
+permalink:          /blog/:year/:month/:day/:title.html
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-permalink:     /blog/:year/:month/:day/:title.html
-paginate_path: /page:num
+# Comments
+disqus_shortname:   47roninblog
+
+# Social
+# if you don't have any of social below, comment the line.
+google:
+  #plus:            #username
+  analytics:  UA-57205661-1
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+#email: muzzy@gmail.com
+twitter:            bhameyie
+#facebook:           meNoLiky
+github:             bhameyie
+#stackoverflow:      123456/username   from a "http://stackoverflow.com/users/123456/username" link
+linkedin:           bhameyie
+#xing:              username
+#instagram:          username
+#lastfm:             username
+#tumblr:             username
+#pinterest:         username
+#foursquare:        username
+#steam:              username
+#dribbble:          username
+#youtube:            username
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+
+# Gems
 gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-gist
-  - jekyll-paginate
-events:
-  - image: /assets/images/timeline/spidertocat.png
-    date: "September 2011 - Today"
-    description: "Working in the financial industry"
-  - image: /assets/images/timeline/baracktocat.jpg
-    date: "June 2011"
-    description: "Graduated with a Bachelor and a Master of Science in Software Engineering"
 
-# First image of the Timeline
+jekyll-mentions:
+    base_url: https://github.com
 
-timeline-img: https://avatars0.githubusercontent.com/u/1227030?v=3&s=460
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]

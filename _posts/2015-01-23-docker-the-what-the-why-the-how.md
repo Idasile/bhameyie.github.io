@@ -10,6 +10,7 @@ tags:
 - environment
 categories: cloud distributed-systems
 thumbnail: https://c2.staticflickr.com/8/7336/14098888813_1047e39f08.jpg
+comments: true
 ---
 
 [In a previous post]({% post_url 2015-01-16-terraform-dot-io-all-hail-infrastructure-as-code %}), I briefly threw in a few "buzzwords", namely Immutable Infrastructure and Docker. To start, Docker is more than just a new buzzword increasingly appearing on folks resumes. It is a tool built to solve a particular problem: the Immutable Infrastucture - also refered to as [Immutable Servers](http://martinfowler.com/bliki/ImmutableServer.html). The approach that it takes to achieve that is fairly different from automated configuration tools (ACL), and is one that has opened multiple possibilities for both devs and ops folks.

@@ -11,6 +11,7 @@ tags:
 - architecture
 categories: distributed-systems architecture
 thumbnail: https://c1.staticflickr.com/3/2633/3853784154_d6df0bb3e5.jpg
+comments: true
 ---
 
 Most avid Twitter users remember the fail whale of the 2010 World Cup that almost sank Twitter before it could truly become the juggernaut that it is today. The root cause of it was that their system was being overloaded with requests, having found overnight fame during that international events. Being unable to service all of them at the time due to the architecture of their system, a lot of us trying to tweet "GOOOOAAALLL!!!" were greeted with the whale. That could have sunk their business as folks could have simply reverted back to using Facebook. Thankfully for them (and us), they survived and [lived to tell the tale](https://gigaom.com/2014/06/18/twitters-infrastructure-is-designed-to-keep-away-the-fail-whale/). What does that have to do with Reactive Systems?

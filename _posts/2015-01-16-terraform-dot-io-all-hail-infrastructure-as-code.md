@@ -13,6 +13,7 @@ tags:
 - automated
 categories: cloud distributed-systems
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kirkuk_Infrastructure_Rebuild.jpg/640px-Kirkuk_Infrastructure_Rebuild.jpg
+comments: true
 ---
 
 If you are familiar with the concept of Continuous Deployment championed by Eric Ries of the [Lean Startup](http://en.wikipedia.org/wiki/The_Lean_Startup) fame, as well the motivations behind [Immutable Infrastructure](http://blog.codeship.com/immutable-deployments/), you know how beneficial it is to pursue mechanisms enabling the fast and automated deployment/distribution of your application, the main ones being that the former decreases the feedback loop on new features while the latter removes setup/environment issues inherent with mutability in your environment.

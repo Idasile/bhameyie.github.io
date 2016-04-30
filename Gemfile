@@ -1,10 +1,8 @@
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jemoji'
-gem 'jekyll-paginate'
-gem 'pygments.rb'
-gem 'jekyll-gist'
-gem 'rouge'
-gem 'stringex'
+gem "jekyll", "~> 3.0"
+gem "jekyll-sitemap"
+gem "jekyll-gist"
+gem 'jekyll-mentions'
+gem 'jekyll-feed'
 gem 'rake'
-gem 'jekyll'

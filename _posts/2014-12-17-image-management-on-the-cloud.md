@@ -11,6 +11,7 @@ tags:
 - cloudinary
 - image-management
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/8/82/Img_51614_critical-data-centre-at-uni-of-hertfordshire.jpeg
+comments: true
 ---
 
 When building social media apps or other systems that involve user generated content which include images (profile images, blog post images, etc...), it is not long until we get to the important question of wether to build and maintain our own image management system, or to rely on existing services to help us achieve that purpose.

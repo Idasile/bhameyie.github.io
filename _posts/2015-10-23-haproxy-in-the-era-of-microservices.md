@@ -11,6 +11,7 @@ tags:
 - consul
 categories: cloud architecture
 thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/AWS_Simple_Icons_Networking_Amazon_Elastic_Load_Balancer.svg/768px-AWS_Simple_Icons_Networking_Amazon_Elastic_Load_Balancer.svg.png
+comments: true
 ---
 
 *"Microservices"*, the latest architecture buzzword being thrown around to describe perhaps one of the most interesting architecture styles of this decade.

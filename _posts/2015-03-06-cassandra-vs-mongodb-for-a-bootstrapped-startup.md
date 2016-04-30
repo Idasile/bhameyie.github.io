@@ -9,6 +9,7 @@ tags:
 - startup
 categories: general cloud
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/500px-Cassandra_logo.svg.png
+comments: true
 ---
 
 The database. One of the most boring yet most essential piece ever design by mankind. Its sole purpose, serve as a place where we store the data used by our uber-awesome-oh-so-incredible™ application. So long as it is online, that we can store our data in it, and that we can retrieve it, we tend not to concern ourselves too much with it. As [stated](http://planetcassandra.org/blog/mongodb-this-is-not-the-database-you-are-looking-for/) by Patrick McFadin : "Is it scaling? Yep. Is it online? Yep. Boring". When Bootstrapping a startup, one tends to have little time (unless you've [quit your day job](http://www.forbes.com/sites/shawnoconnor/2013/07/02/step-5-for-a-successful-startup-dont-quit-your-day-job/)) and little resources. Getting to the point where you have a boring database would indeed be the dream so that you can focus on your app. To get there however, the very first step is picking the right one based on your application's needs. There are many options out there. One that I have seen bee heavily recommended back when I was working on a side project was [MongoDB](http://www.mongodb.org/).

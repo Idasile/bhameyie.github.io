@@ -10,6 +10,7 @@ tags:
 - image-management
 categories: mobile cloud
 thumbnail: http://www.toptal.com/uploads/blog/category/logo/293/Apple_Swift_Logo.png
+comments: true
 ---
 
 Let say we wanted to upload images captured through our iOS app to the cloud, and we have chosen Cloudinary as the means to this. Let say we have chosen to build application using [Swift](https://developer.apple.com/swift/), the new programming language released by Apple for building iOS applications.

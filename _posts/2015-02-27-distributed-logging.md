@@ -10,6 +10,7 @@ tags:
 - centralized-logs
 categories: cloud
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/9/93/Stacked_logs_-_geograph.org.uk_-_285052.jpg
+comments: true
 ---
 
 

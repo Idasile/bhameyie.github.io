@@ -11,6 +11,7 @@ tags:
 - reactive-design
 categories: cloud distributed-systems architecture
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/6/6d/Akka_mountain.jpg
+comments: true
 ---
 
 [Akka](http://akka.io/) has been around for quite some time now, making the life of the modern developer so much easier. For those unfamiliar with it, it is a toolkit for building highly concurrent and distributed systems. It relies heavily on the [Actor model](http://c2.com/cgi/wiki?ActorsModel) for concurrency (i.e actors as entity capable of asynchronously processing messages they receives from other actors in its system) and has capacities for distributing one's application. One of the most recent mechanism it provides to achieve the latter: [Akka clusters](http://doc.akka.io/docs/akka/snapshot/common/cluster.html). Why should you care?

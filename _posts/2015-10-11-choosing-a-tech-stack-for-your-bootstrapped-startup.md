@@ -6,6 +6,7 @@ tags:
 - startup
 categories: general
 thumbnail: /assets/images/posts/desk.jpg
+comments: true
 ---
 
 Programming languages. Tons of them have emerged over the years. Some decent great ones. Some decent ones. Some pretty awful ones as well. Most have strong points. All of have weak points. Often time I hear/read folks claiming that it doesn't matter. Just pick one and roll with it. Well...it does!
