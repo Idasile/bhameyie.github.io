@@ -8,7 +8,7 @@ words_per_minute:   200
 locale:             en_US
 url:                http://47ron.in
 permalink:          /blog/:year/:month/:day/:title.html
-email:       your_email@example.com
+#email:       your_email@example.com
 author:      Boguste Hameyie
 baseurl:     ""
 date_format: "%b %-d, %Y"
