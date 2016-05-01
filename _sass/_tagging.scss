@@ -1,0 +1,86 @@
+@mixin font-rem($size) {
+  font-size: 0 + $size;
+  font-size: 0 + $size / $doc-font-size;
+}
+@mixin rounded($radius:4px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+  -webkit-border-top-right-radius: $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius: $bottomleft;
+  -webkit-border-top-left-radius: $topleft;
+  -moz-border-radius-topright: $topright;
+  -moz-border-radius-bottomright: $bottomright;
+  -moz-border-radius-bottomleft: $bottomleft;
+  -moz-border-radius-topleft: $topleft;
+  border-top-right-radius: $topright;
+  border-bottom-right-radius: $bottomright;
+  border-bottom-left-radius: $bottomleft;
+  border-top-left-radius: $topleft;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.entry-tags {
+  display: block;
+  margin-top: 1rem;
+  width: 70%;
+  float: left;
+  text-align: left;
+}
+// entry meta
+.entry-meta {
+  @include font-rem(12);
+  text-transform: uppercase;
+  color: lighten($color_tuatara,60);
+  padding-left: 0;
+  a {
+    color: lighten($color_tuatara,60);
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+  }
+  .tag {
+    display: inline-block;
+    border: 1px solid;
+    border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
+    @include rounded(3px);
+    text-decoration: none;
+    background-color: white;
+    color: $color_tuatara;
+    @include transition(.75s);
+    margin: 2px 5px;
+    span {
+      float: left;
+      padding: 2px 6px;
+    }
+    .count {
+      background-color: darken(white,15);
+      @include border-radius(3px,3px,0,0);
+    }
+    &:hover {
+      background-color: darken(white,15);
+      box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
+    }
+  }
+}
+a.post_tag {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+//  padding-left: 2em;
+//  border: 2px solid #4CAF50;
+  background-image: none;
+  &:hover {
+    background-image: none;
+  }
+}

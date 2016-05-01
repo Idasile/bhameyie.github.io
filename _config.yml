@@ -5,68 +5,117 @@ bio:                'A Pragmatic Software Engineer'
 description:        "Tales of a Software Craftman"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
 locale:             en_US
 url:                http://47ron.in
-
-# Jekyll
 permalink:          /blog/:year/:month/:day/:title.html
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
+email:       your_email@example.com
+author:      Boguste Hameyie
+baseurl:     ""
+date_format: "%b %-d, %Y"
+
+# Google services
+google_verification:
+# Use either direct GA implementation or set up GTM account
+# - using both will skew your data (leave blank to not use at all)
+google_analytics: UA-57205661-1
+google_tag_manager:
+# Bing services
+bing_verification:
+
+# Optional features
+animated:             true
+show_related_posts:   false
+show_post_footers:    false
+show_social_icons:    true
+ajaxify_contact_form: false
+enable_mathjax: false
+extended_fonts: false
+enable_anchorjs: false
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: 47roninblog
+
+# Facebook Comments plugin
+# (leave blank to disable Facebook Comments, otherwise set it to true)
+facebook_comments:
+facebook_appid:
+facebook_comments_number: 10
+
+# Social icons
+github_username: bhameyie
+bitbucket_username:
+stackoverflow_id:
+twitter_username: bhameyie
+skype_username:
+steam_nickname:
+google_plus_id:
+linkedin_username: bhameyie
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Post sharing icons
+show_sharing_icons: true
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: false
+share_linkedin: true
+share_digg: false
+share_tumblr: false
+share_reddit: true
+share_stumbleupon: true
+share_hackernews: true
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  share_buttons:
+    text:         'Share this post!'
+    facebook:     'Share on Facebook'
+    twitter:      'Share on Twitter'
+    googleplus:   'Share on Google+'
+    linkedin:     'Share on LinkedIn'
+    digg:         'Share on Digg'
+    tumblr:       'Share on Tumblr'
+    reddit:       'Share on Reddit'
+    stumbleupon:  'Share on StumbleUpon'
+    hackernews:   'Share on Hacker News'
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  index:
+    coming_soon: 'Coming soon...'
+  contact:
+    email:    'muzzled.coder@gmail.com'
+    content:  'What would you like to say?'
+    subject:  'New submission!'
+    submit:   'Say Hello'
+    ajax:
+      sending:  'sending..'
+      sent:     'Message sent!'
+      error:    'Error!'
+  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
+  og_locale: 'en_US'
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+paginate_path: "/blog/page:num/"
+paginate:     4
 sass:
-  sass_dir:         _sass
-  style:            compressed
-
-# Comments
-disqus_shortname:   47roninblog
-
-# Social
-# if you don't have any of social below, comment the line.
-google:
-  #plus:            #username
-  analytics:  UA-57205661-1
-  #verify:
-  #ad-client:
-  #ad-slot:
-#bing-verify:
-#email: muzzy@gmail.com
-twitter:            bhameyie
-#facebook:           meNoLiky
-github:             bhameyie
-#stackoverflow:      123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin:           bhameyie
-#xing:              username
-#instagram:          username
-#lastfm:             username
-#tumblr:             username
-#pinterest:         username
-#foursquare:        username
-#steam:              username
-#dribbble:          username
-#youtube:            username
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-
-# Gems
+  compressed: true
 gems:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
-
-jekyll-mentions:
-    base_url: https://github.com
-
-# Exclude list
+  - jekyll-paginate
+# https://github.com/jekyll/jekyll/issues/2938
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
