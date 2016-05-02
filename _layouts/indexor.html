@@ -356,32 +356,29 @@
 
               <div class="legend legend-right hidden-xs">
                 <div class="item">
-                  <h4>Superhero</h4>
+                  <h4>Some</h4>
                 </div>
-                <!-- //.item -->
 
                 <div class="item">
-                  <h4>Preety Good</h4>
+                  <h4>Of</h4>
                 </div>
-                <!-- //.item -->
 
                 <div class="item">
-                  <h4>Good</h4>
+                  <h4>My</h4>
                 </div>
-                <!-- //.item -->
 
                 <div class="item">
-                  <h4>Newbie</h4>
+                  <h4>strengths</h4>
                 </div>
-                <!-- //.item -->
               </div>
+
               <!-- //.legend -->
 
               <div class="chart clearfix">
                 {% for strength in site.data.strengths %}
                 <div class="item">
                   <div class="bar">
-                    <span class="percent">{{strength.percent_text}}</span>
+                    <span class="percent"></span>
 
                     <div class="item-progress" data-percent="{{ strength.percent }}">
                       <span class="title">{{ strength.title }}</span>
@@ -762,7 +759,7 @@
                 </div>
                 <!-- //.circle -->
 
-                <span class="percent">{{ skill.percent }}%</span>
+                <span class="percent"> - </span>
 
                 <h4 class="text-center">{{ skill.title }}</h4>
               </div>
@@ -807,7 +804,7 @@
                 <h4> {{ kn.title }}</h4>
 
                 <div class="bar">
-                  <span class="percent"> {{kn.percent}}%</span>
+                  <span class="percent">-</span>
                   <span class="item-progress" data-percent="{{kn.percent}}"></span>
                 </div>
                 <!-- //.bar -->
@@ -826,7 +823,7 @@
                 <h4> {{ kn.title }}</h4>
 
                 <div class="bar">
-                  <span class="percent"> {{kn.percent}}%</span>
+                  <span class="percent">-</span>
                   <span class="item-progress" data-percent="{{kn.percent}}"></span>
                 </div>
                 <!-- //.bar -->
