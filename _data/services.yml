@@ -1,0 +1,20 @@
+- name: Strategy
+  icon: icon-Chess
+  content: >
+    Helping businesses iron out plans that would maximize their revenues. <br/>
+    Helping teams establish an attainable technical vision and process structure that leads to maintainable software and scalable teams.
+
+- name: Architecture
+  icon: icon-Transform-2
+  content: >
+    Design and architect maintainable and scalable systems of varying complexities.
+
+- name: Developement
+  icon: icon-Monitor-Tablet
+  content: >
+    Develop, maintain and test software. Areas of expertise includes API Developement, Web Developement and Mobile Developement.
+
+- name: Devops
+  icon: icon-Leafs-2
+  content: >
+    Build tooling and platform to support Development efforts, maintain assets deployed on-site or in the cloud (AWS, Digital Ocean).

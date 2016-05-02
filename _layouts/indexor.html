@@ -7,10 +7,10 @@
     <meta charset="utf-8">
 
     <!-- Site Title -->
-    <title>BERG - Creative Resume Template</title>
+    <title>Boguste Hameyie</title>
 
-    <meta name="description" content="Creative Resume Template">
-    <meta name="keywords" content="berg, creative, resume, template">
+    <meta name="description" content="Boguste Hameyie Resume">
+    <meta name="keywords" content="boguste, hameyie, resume, blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
     <!-- Google Font -->
@@ -35,7 +35,7 @@
     <link href="/assets/css/berg.css" rel="stylesheet" type="text/css">
 
     <!-- Color CSS -->
-    <!--<link href="/assets/css/colors/green.css" rel="stylesheet" type="text/css">-->
+    <link href="/assets/css/colors/green2.css" rel="stylesheet" type="text/css">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 8]>
@@ -49,18 +49,17 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
     <!-- HERO START -->
     <header id="home" class="hero">
         <div class="hero-body">
             <div class="hero-text text-center">
                 <h1>
-                    I'm Nick Berg <span class="blinker"></span>
+                    I'm Boguste Hameyie <span class="blinker"></span>
                 </h1>
 
-                <h1 class="small"><span id="js-rotating">Creative Developer | UI / UX Designer</span></h1>
+                <h1 class="small"><span id="js-rotating">Software Craftsman | Pragmatic Developer</span></h1>
 
-                <p>28 years young, husband and father, coffee addict.</p>
+                <p> Developer, tech enthusiast, hobby photographer, tea drinker.</p>
 <a href="/blog" class="btn btn-lg btn-custom">
                         Read my blog
                     </a>
@@ -90,7 +89,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand visible-xs visible-sm" href="#page-top">BERG</a>
+                <a class="navbar-brand visible-xs visible-sm" href="#page-top">Boguste Hameyie</a>
             </div>
             <!-- //.navbar-header -->
 
@@ -147,21 +146,18 @@
                         <div class="profile-text padding-right-yes">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2 class="section-title">Hello, My Name is Berg.</h2>
+                                    <h2 class="section-title">Hello, My Name is Boguste.</h2>
 
                                     <p>
-                                        Nick Berg, 28 years young, born and grew up in Water Seven, Grand Line. Highly motivated creative developer with international client portfolio.
+An experienced developer who likes to get things done.
                                     </p>
 
                                     <span class="divider"></span>
 
-                                    <p class="text-grey">
-                                        I currently work at Galley-La Company, where I spend most of my time crafting and working on awesome projects.
-                                    </p>
+                                    <p class="text-grey">{{ site.data.sbio.work.primary}} </p>
 
                                     <p class="text-grey">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                    </p>
+{{ site.data.sbio.work.secondary}}                                    </p>
                                 </div>
                                 <!-- //.col-md-12 -->
                             </div>
@@ -176,18 +172,16 @@
                                     <h4>Contact Details</h4>
 
                                     <ul class="list-unstyled text-grey">
-                                        <li>Nick Berg</li>
-                                        <li>123 Water Seven, Grand Line</li>
-                                        <li>+123 456 7890</li>
-                                        <li>hello@nickberg.com</li>
-                                        <li>www.nickberg.com</li>
+                                        <li>Boguste Hameyie</li>
+                                        <li>Philadelphia, PA</li>
+                                        <li>www.bhameyie.com</li>
                                     </ul>
                                 </div>
                                 <!-- //.col-md-5 -->
 
                                 <div class="col-sm-6 col-md-7">
-                                    <a href="#" class="btn btn-lg btn-custom">
-                                        <i class="icon-File-Download"></i> Download Resume
+                                    <a href="#contact" class="btn btn-lg btn-custom">
+                                        <i class="icon-File-Download"></i> Contact Me
                                     </a>
                                 </div>
                                 <!-- //.col-md-6 -->
@@ -224,7 +218,7 @@
                     <div class="col-md-12 text-center">
                         <h2 class="section-title">My Latest Work</h2>
 
-                        <p class="section-subtitle">I'm looking to expand my portfolio while I'm on top and while I'm young.</p>
+                        <p class="section-subtitle">Find out what I'm up to these days</p>
 
                         <span class="divider center"></span>
                     </div>
@@ -235,196 +229,39 @@
                 <!-- PORTFOLIO START -->
                 <div class="portfolio">
                     <div class="row">
+                      {% for project in site.data.projects %}
                         <div class="item col-sm-6 col-md-3">
                             <div class="project-wrapper">
                                 <div class="project-link">
-                                    <a href="/assets/images/portfolio/project-image-1.jpg" class="zoom" title="Buzz Lightyear">
+                                    <a href="{{ project.image }}" class="zoom" title="{{ project.title }}">
                                         <i class="icon-Full-Screen"></i>
                                     </a>
 
-                                    <a href="https://www.behance.net/gallery/25963987/Buzz-Lightyear" target="_blank" class="external-link">
+                                    <a href="{{ project.uri }}" target="_blank" class="external-link">
                                         <i class="icon-Link"></i>
                                     </a>
                                 </div>
                                 <!-- //.project-link -->
 
                                 <div class="project-title">
-                                    <h4>Buzz Lightyear</h4>
+                                    <h4>{{ project.title }}</h4>
                                 </div>
                                 <!-- //.project-title -->
 
-                                <img src="assets/images/portfolio/project-image-1.jpg" alt="" class="img-responsive"/>
+                                <img src="{{ project.image }}" alt="" class="img-responsive"/>
                             </div>
                             <!-- //.project-wrapper -->
                         </div>
                         <!-- //.item -->
+                        {% endfor %}
 
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="/assets/images/portfolio/project-image-2.jpg" class="zoom" title="Robosam 3">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="https://www.behance.net/gallery/25344153/Robosam-3" target="_blank" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Robosam 3</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-2.jpg" alt="" class="img-responsive"/>
-                            </div>
                             <!-- //.project-wrapper -->
                         </div>
                         <!-- //.item -->
 
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="/assets/images/portfolio/project-image-3.jpg" class="zoom" title="Coke Man and Dog">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="https://www.behance.net/gallery/25821381/Coke-Man-and-Dog" target="_blank" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Coke Man and Dog</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-3.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
                         <!-- //.item -->
 
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="/assets/images/portfolio/project-image-4.jpg" class="zoom" title="Speed Projects">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
 
-                                    <a href="https://www.behance.net/gallery/20195929/Speed-Projects" target="_blank" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Speed Projects</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-4.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="/assets/images/portfolio/project-image-5.jpg" class="zoom" title="Wooden Rhinoceros Beetle">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="https://www.behance.net/gallery/26043281/Wooden-Rhinoceros-Beetle" target="_blank" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Wooden Rhinoceros Beetle</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-5.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="/assets/images/portfolio/project-image-6.jpg" class="zoom" title="The First Encounter">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="https://www.behance.net/gallery/25505317/The-first-Encounter" target="_blank" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>The First Encounter</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-6.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="/assets/images/portfolio/project-image-7.jpg" class="zoom" title="Dead Pool">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="https://www.behance.net/gallery/25763797/DEADPOOL" target="_blank" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Dead Pool</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-7.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="item col-sm-6 col-md-3">
-                            <div class="project-wrapper">
-                                <div class="project-link">
-                                    <a href="/assets/images/portfolio/project-image-8.jpg" class="zoom" title="Rebus II">
-                                        <i class="icon-Full-Screen"></i>
-                                    </a>
-
-                                    <a href="https://www.behance.net/gallery/19401293/Rebus-2" target="_blank" class="external-link">
-                                        <i class="icon-Link"></i>
-                                    </a>
-                                </div>
-                                <!-- //.project-link -->
-
-                                <div class="project-title">
-                                    <h4>Rebus II</h4>
-                                </div>
-                                <!-- //.project-title -->
-
-                                <img src="assets/images/portfolio/project-image-8.jpg" alt="" class="img-responsive"/>
-                            </div>
-                            <!-- //.project-wrapper -->
-                        </div>
                         <!-- //.item -->
                     </div>
                     <!-- //.row -->
@@ -447,7 +284,7 @@
                         <h2 class="section-title">What I'm Doing</h2>
 
                         <p class="section-subtitle">
-                            I love what I do. I take great pride in what I do. And I can't do something halfway, three-quarters, nine-tenths. If I'm going to do something, I go all the way.
+                            I love what I do. What's the point of being alive if you don't at least try to do something remarkable.
                         </p>
 
                         <span class="divider center"></span>
@@ -459,88 +296,19 @@
                 <!-- SERVICES START -->
                 <div class="services">
                     <div class="row">
+                      {% for service in site.data.services %}
                         <div class="col-sm-4 col-md-4 item top dark-bg match-height">
                             <div class="inner-content">
-                                <i class="icon-Chess colored-text"></i>
+                                <i class="{{ service.icon }} colored-text"></i>
 
-                                <h4>1. Strategy</h4>
+                                <h4>{{ forloop.index }}. {{ service.name }}</h4>
 
                                 <p class="text-grey">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                </p>
+{{ service.content }}                                </p>
                             </div>
                             <!-- //.inner-content -->
                         </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-4 col-md-4 item top match-height">
-                            <div class="inner-content">
-                                <i class="icon-Leafs-2 colored-text"></i>
-
-                                <h4>2. Branding</h4>
-
-                                <p class="text-grey">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                </p>
-                            </div>
-                            <!-- //.inner-content -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-4 col-md-4 item top dark-bg match-height">
-                            <div class="inner-content">
-                                <i class=" icon-Transform-2 colored-text"></i>
-
-                                <h4>3. Web Design</h4>
-
-                                <p class="text-grey">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                </p>
-                            </div>
-                            <!-- //.inner-content -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-4 col-md-4 item match-height">
-                            <div class="inner-content">
-                                <i class="icon-Speach-Bubble3 colored-text"></i>
-
-                                <h4>4. Social Media</h4>
-
-                                <p class="text-grey">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                </p>
-                            </div>
-                            <!-- //.inner-content -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-4 col-md-4 item dark-bg match-height">
-                            <div class="inner-content">
-                                <i class="icon-Monitor-Tablet colored-text"></i>
-
-                                <h4>5. Development</h4>
-
-                                <p class="text-grey">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                </p>
-                            </div>
-                            <!-- //.inner-content -->
-                        </div>
-                        <!-- //.item -->
-
-                        <div class="col-sm-4 col-md-4 item match-height">
-                            <div class="inner-content">
-                                <i class="icon-Consulting colored-text"></i>
-
-                                <h4>6. Consulting</h4>
-
-                                <p class="text-grey">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                </p>
-                            </div>
-                            <!-- //.inner-content -->
-                        </div>
+                        {% endfor %}
                         <!-- //.item -->
                     </div>
                     <!-- //.row -->
@@ -562,7 +330,7 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title">My Strengths</h2>
 
-                        <p class="section-subtitle">Failure will never overtake me if my determination to succeed is strong enough.</p>
+                        <p class="section-subtitle" style="color: white;">Effort is what makes you smart or talented. Failure is merely an incentive to try a different approach next time.</p>
 
                         <span class="divider center"></span>
                     </div>
@@ -604,70 +372,21 @@
                             <!-- //.legend -->
 
                             <div class="chart clearfix">
+                              {% for strength in site.data.strengths %}
                                 <div class="item">
                                     <div class="bar">
-                                        <span class="percent">92%</span>
+                                        <span class="percent">{{strength.percent_text}}</span>
 
-                                        <div class="item-progress" data-percent="92">
-                                            <span class="title">Creativity</span>
+                                        <div class="item-progress" data-percent="{{ strength.percent }}">
+                                            <span class="title">{{ strength.title }}</span>
                                         </div>
                                         <!-- //.item-progress -->
                                     </div>
                                     <!-- //.bar -->
                                 </div>
+                                {% endfor %}
                                 <!-- //.item -->
 
-                                <div class="item">
-                                    <div class="bar">
-                                        <span class="percent">71%</span>
-
-                                        <div class="item-progress" data-percent="71">
-                                            <span class="title">Reliable</span>
-                                        </div>
-                                        <!-- //.item-progress -->
-                                    </div>
-                                    <!-- //.bar -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="bar">
-                                        <span class="percent">82%</span>
-
-                                        <div class="item-progress" data-percent="82">
-                                            <span class="title">Comunication</span>
-                                        </div>
-                                        <!-- //.item-progress -->
-                                    </div>
-                                    <!-- //.bar -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="bar">
-                                        <span class="percent">58%</span>
-
-                                        <div class="item-progress" data-percent="58">
-                                            <span class="title">Leadership</span>
-                                        </div>
-                                        <!-- //.item-progress -->
-                                    </div>
-                                    <!-- //.bar -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item">
-                                    <div class="bar">
-                                        <span class="percent">67%</span>
-
-                                        <div class="item-progress" data-percent="67">
-                                            <span class="title">Persuasion</span>
-                                        </div>
-                                        <!-- //.item-progress -->
-                                    </div>
-                                    <!-- //.bar -->
-                                </div>
-                                <!-- //.item -->
                             </div>
                             <!-- //.chart -->
                         </div>
@@ -709,35 +428,34 @@
                         <h3>
                             My Education
                             <br>
-                            2003 - 2012
+                            2006 - Present
                         </h3>
 
                         <div class="panel-group resume" id="education">
+                          {% for educ in site.data.education %}
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">2010 - 2012</span>
+                                    <span class="resume-year">{{ educ.year }}</span>
                                 </div>
                                 <!-- //.resume-year -->
 
                                 <div class="resume-btn">
-                                    <a href="#education1" data-toggle="collapse" data-parent="#education"></a>
+                                    <a href="#education{{ forloop.index }}" data-toggle="collapse" data-parent="#education"></a>
                                 </div>
                                 <!-- //.resume-btn -->
 
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h4 class="resume-title">Masters Degree - University Name</h4>
+                                            <h4 class="resume-title"> {{ educ.institution }}</h4>
                                         </div>
                                         <!-- //.panel-title -->
                                     </div>
                                     <!-- //.panel-heading -->
 
-                                    <div id="education1" class="panel-collapse collapse in">
+                                    <div id="#education{{ forloop.index }}" class="panel-collapse collapse in">
                                         <div class="panel-body text-grey">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                            </p>
+                                          <p>  {{ educ.description }} </p>
                                         </div>
                                         <!-- //.panel-body -->
                                     </div>
@@ -746,74 +464,7 @@
                                 <!-- //.panel -->
                             </div>
                             <!-- //.resume-item -->
-
-                            <div class="resume-item">
-                                <div class="resume-year">
-                                    <span class="resume-year">2005 - 2008</span>
-                                </div>
-                                <!-- //.resume-year -->
-
-                                <div class="resume-btn">
-                                    <a href="#education2" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
-                                </div>
-                                <!-- //.resume-btn -->
-
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <div class="panel-title">
-                                            <h4 class="resume-title">Bachelors Degree - University Name</h4>
-                                        </div>
-                                        <!-- //.panel-title -->
-                                    </div>
-                                    <!-- //.panel-heading -->
-
-                                    <div id="education2" class="panel-collapse collapse">
-                                        <div class="panel-body text-grey">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                            </p>
-                                        </div>
-                                        <!-- //.panel-body -->
-                                    </div>
-                                    <!-- //.panel-collapse -->
-                                </div>
-                                <!-- //.panel -->
-                            </div>
-                            <!-- //.resume-item -->
-
-                            <div class="resume-item">
-                                <div class="resume-year">
-                                    <span class="resume-year">2003 - 2005</span>
-                                </div>
-                                <!-- //.resume-year -->
-
-                                <div class="resume-btn">
-                                    <a href="#education3" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
-                                </div>
-                                <!-- //.resume-btn -->
-
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <div class="panel-title">
-                                            <h4 class="resume-title">Graduation - College Name</h4>
-                                        </div>
-                                        <!-- //.panel-title -->
-                                    </div>
-                                    <!-- //.panel-heading -->
-
-                                    <div id="education3" class="panel-collapse collapse">
-                                        <div class="panel-body text-grey">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                            </p>
-                                        </div>
-                                        <!-- //.panel-body -->
-                                    </div>
-                                    <!-- //.panel-collapse -->
-                                </div>
-                                <!-- //.panel -->
-                            </div>
-                            <!-- //.resume-item -->
+                            {% endfor %}
                         </div>
                         <!-- //.panel-group -->
                     </div>
@@ -996,7 +647,7 @@
                     <div class="col-md-12 text-center">
                         <h2 class="section-title">References</h2>
 
-                        <p class="section-subtitle">Testimonials are enough to convince people for now.</p>
+                        <p class="section-subtitle" style="color:  white;">What has been said about me.</p>
 
                         <span class="divider center"></span>
                     </div>
@@ -1510,7 +1161,7 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <h2 class="section-title">Milestones Achieved</h2>
 
-                        <p class="section-subtitle">My path has not been determined. I shall have more experiences and pass many more milestones.</p>
+                        <p class="section-subtitle" style="color:  white;">My path has not been determined. I shall have more experiences and pass many more milestones.</p>
 
                         <span class="divider center"></span>
                     </div>
@@ -1745,10 +1396,66 @@
                                 </h4>
                             </div>
                             <!-- //.speech-bubble -->
+                            <div class="container">
 
-                            <h2>Nick <strong>Berg</strong></h2>
+                                <form class="well form-horizontal" method="POST" action="https://formspree.io/muzzled.coder@gmail.com">
+                            <fieldset>
 
-                            <h4 class="text-grey">hello@nickberg.com</h4>
+                            <!-- Form Name -->
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                              <div class="col-md-4 inputGroupContainer">
+                              <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                              <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                                <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                              <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Text input-->
+                                   <div class="form-group">
+                                <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                              <input name="_replyTo" placeholder="E-Mail Address" class="form-control"  type="text">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-4 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    	<textarea class="form-control" name="comment" placeholder="How can I Help you?"></textarea>
+                              </div>
+                              </div>
+                            </div>
+
+                            <!-- Success message -->
+                            <!-- Button -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label"></label>
+                              <div class="col-md-4">
+                                <button type="submit" class="btn btn-success" >Send <span class="glyphicon glyphicon-send"></span></button>
+                              </div>
+                            </div>
+
+                            </fieldset>
+                            </form>
+                            </div>
+                                </div><!-- /.container -->
 
                             <span class="divider center"></span>
                         </div>
@@ -1778,35 +1485,21 @@
                     <ul class="list-inline social-icons">
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://github.com/bhameyie" target="_blank"><i class="fa fa-github"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
 
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/bhameyie" target="_blank"><i class="fa fa-twitter"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
 
                         <li>
                             <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </div>
-                            <!-- //.item -->
-                        </li>
-
-                        <li>
-                            <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                            </div>
-                            <!-- //.item -->
-                        </li>
-
-                        <li>
-                            <div class="item">
-                                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                <a href="https://www.linkedin.com/in/bhameyie" target="_blank"><i class="fa fa-linkedin"></i></a>
                             </div>
                             <!-- //.item -->
                         </li>
@@ -1819,7 +1512,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright text-center">
-                        <p class="text-grey">&copy; 2015 Nick Berg. All rights reserved.</p>
+                        <p class="text-grey">&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
                     </div>
                     <!-- //.copyright -->
                 </div>
