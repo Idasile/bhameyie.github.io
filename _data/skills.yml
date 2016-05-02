@@ -7,22 +7,19 @@
 - title: Scala
   percent: 80
 
+- title: WCF
+  percent: 80
+
 - title: Go
   percent: 80
 
 - title: Play! Framework
   percent: 80
 
-- title: ASP.NET MVC
-  percent: 80
-
-- title: ASP.NET Web Api
-  percent: 80
-
-- title: WCF
-  percent: 80
-
 - title: Cassandra
+  percent: 80
+
+- title: ASP.NET MVC
   percent: 80
 
 - title: Postgres
@@ -41,6 +38,9 @@
   percent: 80
 
 - title: French
+  percent: 80
+
+- title: ASP.NET Web Api
   percent: 80
 
 - title: Git

@@ -1,13 +1,46 @@
 row1:
   - title: API and Web Developement
-    percent: 100
+    percent: 80
   - title: Mobile Developement
-    percent: 100
+    percent: 80
   - title: DevOps
-    percent: 100
-
+    percent: 80
+  - title: Test Driven Development
+    percent: 80
+  - title: Marketing
+    percent: 80
+  - title: Pair Programming
+    percent: 80
+  - title: Continuous Integration
+    percent: 80
+  - title: Behavior Driven Development
+    percent: 80
+  - title: Amazon Web Services
+    percent: 80
+  - title: Domain Driven Design
+    percent: 80
+  - title: SOLID
+    percent: 80
 row2:
   - title: Software Architecture
-    percent: 100
+    percent: 80
+  - title: Mentoring
+    percent: 80
+  - title: Agile
+    percent: 80
+  - title: Product Monetization
+    percent: 80
+  - title: Object Oriented Programming
+    percent: 80
+  - title: Xtreme Programming
+    percent: 80
+  - title: Micro Services
+    percent: 80
+  - title: Continuous Deployment
+    percent: 80
   - title: Distributed Systems
-    percent: 100
+    percent: 80
+  - title: Immutable Infrastructure
+    percent: 80
+  - title: Functional Programming
+    percent: 80
