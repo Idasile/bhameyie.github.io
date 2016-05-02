@@ -11,8 +11,16 @@
 
 - institution: Advanced Akka With Scala - ExitCertified (BoldRadius)
   year: October 2014
-  description: Learn advanced concepts of the Akka framework
+  description: Learn advanced concepts of the Akka framework.
 
 - institution: BS and MS in Software Engineering - Drexel University
-  year: 2015 - 2016
-  description: Acquired foundational skills of Software Engineering through coursework, research and summer co-op work.
+  year: 2006 - 2011
+  description: >
+    <ul>
+    <li>Acquired foundational skills of Software Engineering through courses, research assistantship and summer co-op work.</li>
+    <li>Researched, designed and developed a Software Recommendation and Automated Refactoring tool using C#, Mono Gendarme and NRefactory that helps developers find code smells and refactors their code for them, so as to improve code quality and raise awareness to code smells.</li>
+    <li>Researched, designed and developed an Autonomic Communication Framework for Robots using C#, WCF and MRDS to facilitate the development of autonomous robotic systems.</li>
+    <li>Provided support during lab sessions, graded lab exercises as well as the midterm and final exams for students taking Computer Programming A and B (Winter 2011), and Software Engineering 2 (Winter 2010 and 2011).</li>
+    <li>Graded assignments and provided direction and support throughout the length of the course via email and office hours for students taking Software Design (Spring 2010) and Operating Systems (Fall 2010).</li>
+    <li>Designed and developed a mobile application targeting both the Android and the WP7 platforms that integrated multiple services from Drexel University and provided a varied set of features catering to the needs of Drexel University students as part of the senior design competition.</li>
+    </ul>

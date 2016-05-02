@@ -1,0 +1,44 @@
+- title: C#
+  percent: 85
+
+- title: F#
+  percent: 70
+
+- title: Scala
+  percent: 60
+
+- title: Go
+  percent: 45
+
+- title: Play! Framework
+  percent: 60
+
+- title: ASP.NET MVC, ASP.NET Web Api & WCF
+  percent: 70
+
+- title: Javascript
+  percent: 40
+
+- title: Cassandra
+  percent: 35
+
+- title: Oracle
+  percent: 55
+
+- title: Sql Server
+  percent: 55
+
+- title: Java
+  percent: 65
+
+- title: Swift
+  perent: 45
+
+- title: French
+  percent: 100
+
+- title: Git
+  percent: 80
+
+- title: Many more
+  percent: 50

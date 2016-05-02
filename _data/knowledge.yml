@@ -1,0 +1,13 @@
+row1:
+  - title: API and Web Developement
+    percent: 80
+  - title: Mobile Developement
+    percent: 45
+  - title: DevOps
+    percent: 60
+
+row2:
+  - title: Software Architecture
+    percent: 65
+  - title: Distributed Systems
+    percent: 65
