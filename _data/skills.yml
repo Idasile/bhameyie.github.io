@@ -13,13 +13,19 @@
 - title: Play! Framework
   percent: 80
 
-- title: ASP.NET MVC, ASP.NET Web Api & WCF
+- title: ASP.NET MVC
   percent: 80
 
-- title: Javascript
+- title: ASP.NET Web Api
+  percent: 80
+
+- title: WCF
   percent: 80
 
 - title: Cassandra
+  percent: 80
+
+- title: Postgres
   percent: 80
 
 - title: Oracle
