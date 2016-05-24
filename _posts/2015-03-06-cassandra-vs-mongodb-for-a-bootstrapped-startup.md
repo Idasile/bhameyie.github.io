@@ -16,7 +16,7 @@ The database. One of the most boring yet most essential piece ever design by man
 
 # MongoDB
 
-In my time scouring the web, I have come accross many recommendations, some of which I have followed when working on a side project. Back in 2013, MongoDB was still the rage. All the cool kids were using it. Why not after all? Who could resist the promise of dumping all your nested data in a collection and retrieving it just as easily? Database schemas? Why use that when you can have a dynamic schema instead? Plus, it's all asynchronous and fault tolerant. [Everything is awesome](https://www.youtube.com/watch?v=StTqXEQ2l-Y)....
+In my time scouring the web, I have come across many recommendations, some of which I have followed when working on a side project. Back in 2013, MongoDB was still the rage. All the cool kids were using it. Why not after all? Who could resist the promise of dumping all your nested data in a collection and retrieving it just as easily? Database schemas? Why use that when you can have a dynamic schema instead? Plus, it's all asynchronous and fault tolerant. [Everything is awesome](https://www.youtube.com/watch?v=StTqXEQ2l-Y)....
 
 <img src="http://cdn.meme.am/instances/500x/59835196.jpg" alt="trap" width="70%">
 
@@ -48,6 +48,8 @@ Assuming you use a service like [Compose.io](https://www.compose.io/) to host, s
 
 If you're bootstrapping your startup and have limited time, but some resources, I could see how you could build your application with MongoDB initially to get a proof of concept and get funding, or even to get an MVP to test the market and fail fast. It is also possible like that your use case would work just fine with MongoDB like [Server Density's](https://blog.serverdensity.com/tech-behind-time-series-graphs-2bn-docs-per-day-30tb-per-month/).
 
+**UPDATE**: For more on MongoDb, please check out this [comprehensive tutorial from Guru99](http://www.guru99.com/mongodb-tutorials.html).
+
 <img src="http://cdn.meme.am/instances/500x/59837724.jpg" alt="more than mongo" width="70%">
 
 # Cassandra
@@ -65,6 +67,9 @@ My personal criteria for determining which database to use are:
 <a href="https://imgflip.com/i/ie72q"><img src="https://i.imgflip.com/ie72q.jpg" title="made at imgflip.com"/></a>
 
 Based on that, Cassandra jumps out to me as a better choice. It is highly available and easy to scale, and well documented. It has a thriving community of users, and has been adopted by many dev shops I look up to like [Netflix](http://techblog.netflix.com/). It is also supported as a backend storage mechanism for [Titan](https://github.com/thinkaurelius/titan), meaning that in my previous scenario I wouldn't need to rely on Neo4J, thus reducing expenses. I've been playing with it recently, and so far it's been fairly painless. The only drawback: its cost.
+
+**UPDATE**: For more on Cassandra, please check out this [tutorial from Guru99](http://www.guru99.com/cassandra-tutorial.html).
+
 
 If you care about using Cassandra as a service, you could use [InstaClustr](https://www.instaclustr.com/pricing/) for a price range of 299$ to 404$ a month per node. Setting up the cluster yourself on aws with minimum of 3 m3.large machine would cost you about 300$ per month. That is more expensive than just MongoDB, less expensive than MongoDB with side databases. In theory, for just an MVP, you could use a smaller ec2 instance at the cost of performance, then switch to recommended configurations once you've validated your idea.
 
