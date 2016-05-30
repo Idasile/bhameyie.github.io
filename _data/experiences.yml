@@ -1,4 +1,11 @@
 - title: >
+    .NET Application Developer
+  year: May 2016 - Present
+  description: >
+    <ul>
+      <li>Participated in research and development activities relating to Assurance CM, a business continuity planning (BCP) solution built on ASP.NET MVC.</li>
+    </ul>
+- title: >
     <ul>
     <li>Senior Software Engineer - Smartstream Technologies Inc (through acquisition. <b>2015 - Present</b>) </li>
     <li>Staff Software Engineer - IBM (through acquisition. <b>2012 - 2015</b>) </li>
@@ -8,11 +15,4 @@
   description: >
     <ul>
       <li>Participated in research and development activities relating to a next generation Collateral Management application, utilizing C# 4.5 and F# 3.1, Windows Forms, WCF and ASP.NET MVC, following Extreme Programming (XP) methodologies including Test Driven Development (TDD), Behavior Driven Development (BDD) and Pair Programming.</li>
-    </ul>
-- title: >
-    .NET Application Developer
-  year: May 2016 - Present
-  description: >
-    <ul>
-      <li>Participated in research and development activities relating to Assurance CM, a business continuity planning (BCP) solution built on ASP.NET MVC.</li>
     </ul>
