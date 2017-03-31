@@ -1,0 +1,9 @@
+---
+author: Boguste
+layout: post
+title: "Passionate programmers: Keeping the drive alive"
+date: 2017-03-30 20:56:36 -0400
+tags: 
+categories: 
+thumbnail: http://upload.wikimedia.org/wikipedia/commons/2/23/HokusaiChushingura.jpg
+---
