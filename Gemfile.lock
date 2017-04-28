@@ -197,7 +197,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll (~> 3.0)
+  jekyll
   jekyll-feed
   jekyll-gist
   jekyll-mentions

@@ -16,7 +16,7 @@ end
 desc "Serve jekyll site"
 task :serve do
   puts "## Serving Site with Jekyll"
-  system "jekyll serve --drafts"
+  system "jekyll serve --incremental"
 end
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
