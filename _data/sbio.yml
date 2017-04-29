@@ -4,3 +4,9 @@ work:
     I currently work at Sungard AS, where I spend most of my time working on awesome projects in the .NET stack.
   secondary: > # this means to ignore newlines until "baseurl:"
     In my spare time I experiment with new Technologies, blog, work on side/portfolio projects, and offer <b>free</b> advice on startups, entrepreneurship, intrapreneurship and technology.
+
+self: 
+  strength: >
+    My top five <a href="https://www.gallupstrengthscenter.com/">Gallup strengths</a> are Analytical, Achiever, Responsibility, Restorative and Harmony. 
+    I am a self-driven Engineer who gets things done, who loves solving problems and who isn’t afraid of taking ownership of anything I commit to, all while maintaining harmony with clients and colleagues.
+  expertise: The breadth of my Engineering expertise ranges from DevOps, Distributed Systems, Cloud Architecture and Backend API development to Web and Mobile Development, as well as Software Testing.

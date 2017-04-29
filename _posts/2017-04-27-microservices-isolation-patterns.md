@@ -16,7 +16,7 @@ categories: cloud distributed-systems
 thumbnail: http://upload.wikimedia.org/wikipedia/commons/2/23/HokusaiChushingura.jpg
 ---
 
-The Microservice architectural pattern has gained in notoriety since being formally coined in 2014. Many books and articles have been written on this subject, including in this blog. One topic however that can never be stressed enough with this pattern is the importance of ensuring proper isolation of services and their data both within and outside bounded contexts. In this series, we'll examine two ways of achieving this.
+The Microservice architectural pattern has gained in notoriety since being formally coined in 2014. Many books and articles have been written on this subject, including in this blog. One topic however that can never be stressed enough is the importance of ensuring proper isolation of services and their data both within and outside bounded contexts. In this series, we'll examine two ways of achieving this.
 
 # A quick refresher
 
@@ -45,7 +45,7 @@ Let's also claim that alongside those different "Front-end services" we also hav
 
 Let's also assume you have your data defined in different isolated schemas/databases as such:
 
-- Account data used by the Identity, Feature Access, Privacy Preferences and Registration services
+- Account data used by the Identity, Privacy Preferences and Registration services
 - Profile data used by the Basic Profile and Identity Integration Services
 - Like data used by the Liking Service
 - Commenting data used by the Comment Service
@@ -55,11 +55,11 @@ Let's also assume you have your data defined in different isolated schemas/datab
 
 Some of the desired feature we want to implement are as follows:
 
-1. a Biker Karma needs to be recomputed whenever a user writes a comment and that the point varies based on whether or not the post being commented was that of a friend.
+1. a Biker Karma needs to be recomputed whenever a user writes a comment. The karma score would vary based on whether or not the post being commented was that of a friend.
 1. a Biker Karma needs to be recomputed whenever a user likes a Biky Post
-1. users with a karma value less than -50 must receive an e-mail saying their account is temporarily disabled and are not allowed to post comments or bikies until an semi-automated of their activities is reviewed to detect fraud of ToS breaches.
-1. users can limit comments on a Biky Post to their friends only. Users can make that selection globally on their account privacy settings and on a post by post basis.
+1. users with a karma score less than -50 must receive an e-mail saying their account is temporarily disabled and are not allowed to post comments or bikies until a semi-automated validation of their activities is performed to ensure they did not breach the Terms of Service (ToS).
+1. users can limit comments on their Bikies to their friends only. Users can make that selection globally on their account privacy settings or on a post by post basis.
 
-How would we go about implementing them knowing that some of the information needed for each item is dispersed across bounded contexts?
+How would we go about implementing these features knowing that some of the information needed for each of them is dispersed across bounded contexts?
 
 [Let's explore the first pattern]({% post_url 2017-04-27-microservices-isolation-patterns-rest-and-rpc %})
