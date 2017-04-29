@@ -35,8 +35,6 @@ Upon completion of any state changing action, each service within the system wou
 That event would contain information about what was done (which can be inferred from the type), as well as information deemed pertinent.
 Any service that would be interested in that type event would subscribe to its source (e.g. RabbitMQ topic, Kafka topic, WebSphere MQ subscription, etc..), and __react__ to the event either by storing data it would need for future actions, or by performing an action.
 
-__NOTE:__ You don't necessarily need Message Queueing systems like RabbitMQ or Kafka to achieve this. You could achieve a similar result using something like Akka Cluster. The [one thing to note](http://doc.akka.io/docs/akka/current/scala/distributed-pub-sub.html#Delivery_Guarantee) however is that, as a consequence of using RPC, the delivery guarentee will be `At Most Once`, whereas using RabbitMQ, Kafka or most other Message Queueing Systems will give you an `At Least Once` delivery guarantee.
-
 For example, whenever a user edits his account preferences, the Privacy Preferences service would publish a `AccountPreferencesChanged` event that would hold information other services could be interested in.
 
 {% highlight java %}
@@ -86,7 +84,9 @@ Another concern is consistency. There will be a period of time during which the 
 
 You can have a system that is consistent __ALL the time__ across all components, but that comes with the risk of it __not being scalable__ and __not even being operable__ when one of its components is down. Or you can have a system that __IS__ consistent but with a small delay (ideally), and is __still be operable and performant__ even when __multiple__ of its components are down. [Udi Dahan](http://udidahan.com/2011/09/18/inconsistent-data-poor-performance-or-soa-pick-one/) and [Greg Young](http://codebetter.com/gregyoung/2010/04/14/quick-thoughts-on-eventual-consistency/) wrote some nice articles on this topic years ago that are still relevant today.
 
-In my opinion, if you can affor the operational cost of Microservices, investing in making your system reactive is the way to go.
+In my opinion, if you can afford the operational cost of Microservices, investing in making your system reactive is the way to go.
+
+You don't necessarily need Message Queueing systems like RabbitMQ or Kafka to achieve this. You could achieve a similar result using something like Akka Cluster. The [one thing to note](http://doc.akka.io/docs/akka/current/scala/distributed-pub-sub.html#Delivery_Guarantee) however is that, as a consequence of using RPC, the delivery guarentee will be `At Most Once`, whereas using RabbitMQ, Kafka or most other Message Queueing Systems will give you an `At Least Once` delivery guarantee.
 
 With that said, there is an alternative we have briefly hinted.
 One extreme option to implement all of our features without concern for other services being down is to blatantly ignore the service boundaries and query the needed data directly in the database.
