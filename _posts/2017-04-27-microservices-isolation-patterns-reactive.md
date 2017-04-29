@@ -96,4 +96,4 @@ It's a trap.
 99 problems lie in wait behind this door and you don't to have to solve even 1 of them.
 Don't open it. Try to avoid it.
 Very few cases like ETL may warrant such an approach, but even for such scenarios there are other possibilities.
-I shall explain why in a future post.
+I shall explain how in a future post.
