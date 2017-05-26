@@ -12,7 +12,7 @@ permalink:          /blog/:year/:month/:day/:title.html
 author:      Boguste Hameyie
 baseurl:     ""
 date_format: "%b %-d, %Y"
-
+banner: http://47ron.in/images/banner2.jpg
 # Google services
 google_verification:
 # Use either direct GA implementation or set up GTM account
